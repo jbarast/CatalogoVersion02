@@ -9,6 +9,8 @@
   
   <!-- Las clases que afecta la Persistencia -->
   <class>com.ipartek.jonBarnes.tipos.Usuario</class>
+  <class>com.ipartek.jonBarnes.tipos.ROL</class>
+  <class>com.ipartek.jonBarnes.tipos.Producto</class>
   
   <!-- Propiedades de la JPA. -->
     <properties>
@@ -27,7 +29,7 @@
         <!-- Dialecto de SQL -->
         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />      
         <!-- Permisos que damos de creacion de tablas -->
-        <property name="hibernate.hbm2ddl.auto" value="create" /> <!-- Solo de creacion de tablas. -->
+        <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- Solo de creacion de tablas. -->
         <!-- Si queremos que muestre las sentencias de SQL que genera o no -->
         <property name="hibernate.show_sql" value="true"/> <!-- Para la parte de desarrollo, despues quitarlo. -->
     </properties>

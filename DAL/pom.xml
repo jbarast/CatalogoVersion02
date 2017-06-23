@@ -15,12 +15,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <!-- Las dependencias. -->
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+  <dependency>
+     <groupId>com.ipartek.jonBarnes.tipos</groupId>
+     <artifactId>Tipos</artifactId>
+     <version>0.0.1-SNAPSHOT</version>
     </dependency>
+    
   </dependencies>
 </project>

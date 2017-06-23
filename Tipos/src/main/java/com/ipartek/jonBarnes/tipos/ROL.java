@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -23,7 +24,8 @@ public class ROL implements Serializable {
 	// Atributos.
 
 	@Id
-	@Column(name = "id")
+	// @Column(name = "id")
+	@GeneratedValue
 	private Long id;
 
 	@Column(name = "rol")
@@ -36,6 +38,13 @@ public class ROL implements Serializable {
 	public ROL(Long id, String rol, String descripcion) {
 		super();
 		this.id = id;
+		this.rol = rol;
+		this.descripcion = descripcion;
+	}
+
+	public ROL(String rol, String descripcion) {
+		super();
+
 		this.rol = rol;
 		this.descripcion = descripcion;
 	}
