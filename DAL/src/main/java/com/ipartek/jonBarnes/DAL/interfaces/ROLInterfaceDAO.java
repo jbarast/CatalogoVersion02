@@ -3,6 +3,7 @@
 package com.ipartek.jonBarnes.DAL.interfaces;
 
 import com.ipartek.jonBarnes.tipos.ROL;
+import com.sun.istack.internal.NotNull;
 
 /**
  * 
@@ -22,5 +23,11 @@ public interface ROLInterfaceDAO {
 
 	// Mostrar la lista de roles.
 	public ROL[] findAll();
+
+	//Buscar por id.
+	public ROL findByID(Long id);
+
+	//Buscar por rol.
+	public ROL finByRol(@NotNull final  String rol);
 
 }

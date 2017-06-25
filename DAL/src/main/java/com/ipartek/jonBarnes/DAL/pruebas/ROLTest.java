@@ -31,7 +31,7 @@ public class ROLTest {
 
 		ROL rol01 = new ROL("admin", "Administrador del sistema");
 		ROL rol02 = new ROL("usuario", "Usuario del sistema");
-		ROL rol03 = new ROL("usuarioPruebas","Usuario para pruebas del sistema");
+		ROL rol03 = new ROL(5L,"usuarioPruebas","Usuario para pruebas del sistema");
 
 		ROLDAO rolDAO = new ROLDAO();
 
@@ -41,7 +41,17 @@ public class ROLTest {
 		//rolDAO.delete(rol03);
 
 		//Miramos como imprime los roles.
-		rolDAO.findAll();
+		ROL[] rolesTable ;
+		rolesTable = rolDAO.findAll();
+
+		for(ROL rol: rolesTable){
+			System.out.println(rol);
+		}
+
+
+
+
+
 
 	}
 }

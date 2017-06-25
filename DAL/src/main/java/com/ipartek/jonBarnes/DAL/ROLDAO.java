@@ -2,12 +2,14 @@
 
 package com.ipartek.jonBarnes.DAL;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import com.ipartek.jonBarnes.DAL.interfaces.ROLInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.ROL;
+import com.sun.istack.internal.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,28 +53,50 @@ public class ROLDAO implements ROLInterfaceDAO {
 		manager.getTransaction().commit();
 	}
 
+	/**
+	 * Nos devuelve la tabla entera.
+	 * @return
+	 */
 	@Override
 	public ROL[] findAll() {
 
+
 		//Nota: Se ponen el nombre de la clase no de la tabla. Si no error.
 		ArrayList<ROL> roles = (ArrayList<ROL>)manager.createQuery("FROM ROL").getResultList();
-		for (ROL rol : roles) {
-			System.out.println(rol.toString());
-		}
+		//for (ROL rol : roles) {
+		//	System.out.println(rol.toString());
+		//}
 		return roles.toArray(new ROL[roles.size()]);
 	}
 
-	public ROL findByROL(String rol) {
-
-		//Para sacar un ROl
-		ROL rolBD = new ROL();
-
-		//manager.getTransaction();
-
-
-		return null;
-
+	/**
+	 * Tipica buscque por Id.
+	 * @param id
+	 * @return
+	 */
+	@Override
+	public ROL findByID(Long id) {
+		return manager.find(ROL.class,id);
 	}
+
+	/**
+	 * Nos da el objeto ROL que coincide con el rol que queremos.
+	 * @param rol
+	 * @return
+	 */
+	@Override
+	public ROL finByRol(@NotNull final  String rol){
+
+		//Un metodo un poco estraño.
+
+		//Creamos la query.
+		Query query = manager.createQuery("FROM ROL where rol = :rol");
+		query.setParameter("rol",rol);
+
+		//Ejecutamos la query.
+		return (ROL)query.getSingleResult();
+	}
+
 
 
 }

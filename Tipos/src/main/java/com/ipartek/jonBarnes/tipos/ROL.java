@@ -28,7 +28,7 @@ public class ROL implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	@Column(name = "rol")
+	@Column(name = "rol", unique = true, nullable = false)
 	private String rol;
 
 	@Column(name = "descripcion")
