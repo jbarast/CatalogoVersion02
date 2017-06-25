@@ -3,10 +3,7 @@ package com.ipartek.jonBarnes.tipos;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * POJO producto.
@@ -24,10 +21,11 @@ public class Producto implements Serializable {
 	// Atributos.
 
 	@Id
-	@Column(name = "id")
+	//@Column(name = "id")
+	@GeneratedValue
 	private long id;
 
-	@Column(name = "nombre")
+	@Column(name = "nombre",unique = true)
 	private String nombre;
 
 	@Column(name = "descripcion")

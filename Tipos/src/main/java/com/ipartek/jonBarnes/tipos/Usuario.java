@@ -2,12 +2,7 @@ package com.ipartek.jonBarnes.tipos;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * POJO usuario, para guardar datos de lo usuario.
@@ -25,14 +20,15 @@ public class Usuario implements Serializable {
 
 	// atributos.
 	@Id
-	@Column(name = "id")
+	//@Column(name = "id")
+	@GeneratedValue
 	private long id;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "id_rol")
 	private ROL idRoles;
 
-	@Column(name = "username")
+	@Column(name = "username",unique = true)
 	private String username;
 
 	@Column(name = "password")
@@ -50,6 +46,23 @@ public class Usuario implements Serializable {
 		this.password = password;
 		this.nombreCompleto = nombreCompleto;
 	}
+
+	//Un constructor muy interesante.
+    //public usuario(String username, String password,String nombreCompleto){
+	  //  super();
+
+	    //this.username = username;
+	    //this.password = password;
+	  //  this.nombreCompleto = nombreCompleto;
+    //}
+
+    public Usuario(ROL idRoles, String username, String password, String nombreCompleto) {
+        super();
+        this.idRoles = idRoles;
+        this.username = username;
+        this.password = password;
+        this.nombreCompleto = nombreCompleto;
+    }
 
 	public Usuario() {
 		super();

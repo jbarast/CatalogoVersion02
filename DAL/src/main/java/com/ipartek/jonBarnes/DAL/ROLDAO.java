@@ -9,6 +9,9 @@ import javax.persistence.Persistence;
 import com.ipartek.jonBarnes.DAL.interfaces.ROLInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.ROL;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * DAO para ROL
  * 
@@ -42,16 +45,34 @@ public class ROLDAO implements ROLInterfaceDAO {
 
 	@Override
 	public void delete(ROL rol) {
-		// TODO Auto-generated method stub
-
+		//Para borrar el objeto.
+		manager.getTransaction().begin();
+		manager.remove(rol);
+		manager.getTransaction().commit();
 	}
 
 	@Override
 	public ROL[] findAll() {
 
-		// List<ROL> roles = (LIST<ROL>)
-		// manager.createQuery("FROM roles").getResultList();
-		return null;
+		//Nota: Se ponen el nombre de la clase no de la tabla. Si no error.
+		ArrayList<ROL> roles = (ArrayList<ROL>)manager.createQuery("FROM ROL").getResultList();
+		for (ROL rol : roles) {
+			System.out.println(rol.toString());
+		}
+		return roles.toArray(new ROL[roles.size()]);
 	}
+
+	public ROL findByROL(String rol) {
+
+		//Para sacar un ROl
+		ROL rolBD = new ROL();
+
+		//manager.getTransaction();
+
+
+		return null;
+
+	}
+
 
 }

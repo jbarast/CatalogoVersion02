@@ -31,11 +31,17 @@ public class ROLTest {
 
 		ROL rol01 = new ROL("admin", "Administrador del sistema");
 		ROL rol02 = new ROL("usuario", "Usuario del sistema");
+		ROL rol03 = new ROL("usuarioPruebas","Usuario para pruebas del sistema");
 
 		ROLDAO rolDAO = new ROLDAO();
 
-		rolDAO.insert(rol01);
-		rolDAO.insert(rol02);
+	//	rolDAO.insert(rol01);
+	//	rolDAO.insert(rol03);
+
+		//rolDAO.delete(rol03);
+
+		//Miramos como imprime los roles.
+		rolDAO.findAll();
 
 	}
 }
