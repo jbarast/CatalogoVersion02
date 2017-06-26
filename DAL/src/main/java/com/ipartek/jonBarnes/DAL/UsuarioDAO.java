@@ -1,11 +1,15 @@
 package com.ipartek.jonBarnes.DAL;
 
-import com.ipartek.jonBarnes.DAL.interfaces.UsuarioInterfaceDAO;
-import com.ipartek.jonBarnes.tipos.Usuario;
+import java.util.ArrayList;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import com.ipartek.jonBarnes.DAL.interfaces.UsuarioInterfaceDAO;
+import com.ipartek.jonBarnes.tipos.Usuario;
+import com.sun.istack.internal.NotNull;
 
 /**
  *
@@ -14,68 +18,118 @@ import javax.persistence.Persistence;
  * @author jonBarnes
  * @version 24/06/2017
  */
-public class UsuarioDAO implements UsuarioInterfaceDAO{
+public class UsuarioDAO implements UsuarioInterfaceDAO {
 
-    //Atributos:
-    private static EntityManager manager;
-    private static EntityManagerFactory emf;
+	// Atributos:
+	private static EntityManager manager;
+	private static EntityManagerFactory emf;
 
+	// Constructor.
+	public UsuarioDAO() {
+		// Cuando inicie el dao, que instancie el manager y el emf.
+		emf = Persistence.createEntityManagerFactory("Persistencia");
+		manager = emf.createEntityManager();
+	}
 
-    //Constructor.
-    public UsuarioDAO() {
-        // Cuando inicie el dao, que instancie el manager y el emf.
-        emf = Persistence.createEntityManagerFactory("Persistencia");
-        manager = emf.createEntityManager();
-    }
+	// Otros metodos.
 
-    //Otros metodos.
+	/**
+	 * Para insertar un usuario en la tabla.
+	 * 
+	 * @param usuario
+	 *            Usuario a insertar.
+	 */
+	@Override
+	public void insert(Usuario usuario) {
+		// Para insertar un ROL.
+		manager.getTransaction().begin();
+		manager.merge(usuario);
+		manager.getTransaction().commit();
 
+	}
 
-    /**
-     * Para insertar un usuario en la tabla.
-     * @param usuario  Usuario a insertar.
-     */
-    @Override
-    public void insert(Usuario usuario) {
-        // Para insertar un ROL.
-        manager.getTransaction().begin();
-        manager.persist(usuario);
-        manager.getTransaction().commit();
+	@Override
+	public void delete(Usuario usuario) {
 
-    }
+		// Para borrar un elemento.
+		manager.getTransaction().begin();
+		manager.remove(usuario);
+		manager.getTransaction().commit();
 
-    @Override
-    public void delete(Usuario usuario) {
+	}
 
-    }
+	@Override
+	public void delete(long idUsuario) {
 
-    @Override
-    public void delete(long idUsuario) {
+		// Primero buscamos el usuario.
+		Usuario usuario = new Usuario();
+		usuario = this.findById(idUsuario);
 
-    }
+		// Borramos el usuario.
+		this.delete(usuario);
 
-    @Override
-    public void update(Usuario usuario) {
+	}
 
-    }
+	@Override
+	public void update(Usuario usuario) {
+		// TODO Hacer el update.
+		// 1º-Buscamos el usuario.
+		Usuario usuarioBD = new Usuario();
+		usuarioBD = this.findByUsername(usuario.getUsername());
 
-    @Override
-    public Usuario[] findAll() {
-        return new Usuario[0];
-    }
+		usuarioBD.setNombreCompleto(usuario.getNombreCompleto());
+		usuarioBD.setPassword(usuario.getPassword());
 
-    @Override
-    public void findById(long idUsuario) {
+	}
 
-    }
+	@Override
+	public Usuario[] findAll() {
 
-    @Override
-    public void findByUsername(String username) {
+		ArrayList<Usuario> usuarios = (ArrayList<Usuario>) manager.createQuery("FROM Usuario").getResultList();
 
-    }
+		return usuarios.toArray(new Usuario[usuarios.size()]);
 
-    @Override
-    public boolean validate(Usuario usuario) {
-        return false;
-    }
+	}
+
+	@Override
+	public Usuario findById(long idUsuario) {
+		return manager.find(Usuario.class, idUsuario);
+
+	}
+
+	@Override
+	public Usuario findByUsername(@NotNull final String username) {
+
+		// Creamos la variable bien.
+		String usernameCompleto = String.format("\'%s\'", username);
+		System.out.println("username:  " + usernameCompleto);
+
+		// Creamos la query.
+		Query query = manager.createQuery("FROM Usuario where username = :username");
+
+		query.setParameter("username", username);
+
+		// Ejecutamos la query.
+		return (Usuario) query.getSingleResult();
+
+	}
+
+	@Override
+	public boolean validate(Usuario usuario) {
+
+		// La variable que devolvemos.
+		boolean usuarioValido = false;
+
+		// Primero tenemos que sacar el usuario de la base de datos.
+		Usuario usuarioBD = new Usuario();
+		usuarioBD = this.findByUsername(usuario.getUsername());
+
+		// Miramos que sean iguales.
+
+		if (usuario.equals(usuarioBD)) {
+			usuarioValido = true;
+		}
+
+		return usuarioValido;
+	}
 }
