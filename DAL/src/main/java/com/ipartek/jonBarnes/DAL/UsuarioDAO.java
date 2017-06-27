@@ -129,9 +129,11 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		Usuario usuarioBD = new Usuario();
 		usuarioBD = this.findByUsername(usuario.getUsername());
 
-		// Miramos que sean iguales.
+		// Miramos que sean iguales.Para que sean iguales el username y las
+		// password tienen que coincidir.
 
-		if (usuario.equals(usuarioBD)) {
+		if (usuario.getUsername().equals(usuarioBD.getUsername())
+				&& usuario.getPassword().equals(usuarioBD.getPassword())) {
 			usuarioValido = true;
 		}
 
