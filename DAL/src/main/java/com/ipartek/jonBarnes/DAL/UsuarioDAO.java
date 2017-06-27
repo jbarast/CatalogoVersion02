@@ -72,7 +72,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 
 	@Override
 	public void update(Usuario usuario) {
-		// TODO Hacer el update.
+
 		// 1º-Buscamos el usuario.
 		Usuario usuarioBD = new Usuario();
 		usuarioBD = this.findByUsername(usuario.getUsername());
