@@ -2,6 +2,7 @@ package com.ipartek.jonBarnes.DAL.pruebas;
 
 import com.ipartek.jonBarnes.DAL.ROLDAO;
 import com.ipartek.jonBarnes.DAL.UsuarioDAO;
+import com.ipartek.jonBarnes.DAL.interfaces.UsuarioInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.Usuario;
 
 /**
@@ -14,7 +15,7 @@ public class UsuarioTest {
 		// Creamos unos usuarios de muestra.
 
 		ROLDAO rolDAO = new ROLDAO();
-		UsuarioDAO usuarioDAO = new UsuarioDAO();
+		UsuarioInterfaceDAO usuarioDAO = new UsuarioDAO();
 
 		Usuario usuario = new Usuario("Usuario04", "pass014", "Nombre Completo usuario4");
 

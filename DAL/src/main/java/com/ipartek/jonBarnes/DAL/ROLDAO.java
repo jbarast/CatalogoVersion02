@@ -2,17 +2,16 @@
 
 package com.ipartek.jonBarnes.DAL;
 
-import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import com.ipartek.jonBarnes.DAL.interfaces.ROLInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.ROL;
-import com.sun.istack.internal.NotNull;
-
-import java.util.ArrayList;
-import java.util.List;
+//import com.sun.istack.internal.NotNull;
 
 /**
  * DAO para ROL
@@ -47,7 +46,7 @@ public class ROLDAO implements ROLInterfaceDAO {
 
 	@Override
 	public void delete(ROL rol) {
-		//Para borrar el objeto.
+		// Para borrar el objeto.
 		manager.getTransaction().begin();
 		manager.remove(rol);
 		manager.getTransaction().commit();
@@ -55,48 +54,48 @@ public class ROLDAO implements ROLInterfaceDAO {
 
 	/**
 	 * Nos devuelve la tabla entera.
+	 * 
 	 * @return
 	 */
 	@Override
 	public ROL[] findAll() {
 
-
-		//Nota: Se ponen el nombre de la clase no de la tabla. Si no error.
-		ArrayList<ROL> roles = (ArrayList<ROL>)manager.createQuery("FROM ROL").getResultList();
-		//for (ROL rol : roles) {
-		//	System.out.println(rol.toString());
-		//}
+		// Nota: Se ponen el nombre de la clase no de la tabla. Si no error.
+		ArrayList<ROL> roles = (ArrayList<ROL>) manager.createQuery("FROM ROL").getResultList();
+		// for (ROL rol : roles) {
+		// System.out.println(rol.toString());
+		// }
 		return roles.toArray(new ROL[roles.size()]);
 	}
 
 	/**
 	 * Tipica buscque por Id.
+	 * 
 	 * @param id
 	 * @return
 	 */
 	@Override
 	public ROL findByID(Long id) {
-		return manager.find(ROL.class,id);
+		return manager.find(ROL.class, id);
 	}
 
 	/**
 	 * Nos da el objeto ROL que coincide con el rol que queremos.
+	 * 
 	 * @param rol
 	 * @return
 	 */
 	@Override
-	public ROL finByRol(@NotNull final  String rol){
+	public ROL finByRol(final String rol) {
 
-		//Un metodo un poco estraño.
+		// Un metodo un poco estraño.
 
-		//Creamos la query.
+		// Creamos la query.
 		Query query = manager.createQuery("FROM ROL where rol = :rol");
-		query.setParameter("rol",rol);
+		query.setParameter("rol", rol);
 
-		//Ejecutamos la query.
-		return (ROL)query.getSingleResult();
+		// Ejecutamos la query.
+		return (ROL) query.getSingleResult();
 	}
-
-
 
 }

@@ -9,7 +9,8 @@ import javax.persistence.Query;
 
 import com.ipartek.jonBarnes.DAL.interfaces.UsuarioInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.Usuario;
-import com.sun.istack.internal.NotNull;
+
+//import com.sun.istack.internal.NotNull;
 
 /**
  *
@@ -20,6 +21,10 @@ import com.sun.istack.internal.NotNull;
  */
 public class UsuarioDAO implements UsuarioInterfaceDAO {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	// Atributos:
 	private static EntityManager manager;
 	private static EntityManagerFactory emf;
@@ -98,7 +103,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	}
 
 	@Override
-	public Usuario findByUsername(@NotNull final String username) {
+	public Usuario findByUsername(final String username) {
 
 		// Creamos la variable bien.
 		String usernameCompleto = String.format("\'%s\'", username);
