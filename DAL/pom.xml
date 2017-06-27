@@ -18,6 +18,8 @@
   
   <!-- Las dependencias. -->
   <dependencies>
+  
+  <!-- EL modulo Tipos -->
   <dependency>
      <groupId>com.ipartek.jonBarnes.tipos</groupId>
      <artifactId>Tipos</artifactId>
