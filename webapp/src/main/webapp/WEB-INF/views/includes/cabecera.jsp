@@ -28,7 +28,7 @@
 </head>
 
 <%--Empieza el Codigo --%>
-<body>
+<body class="container-fluid">
 
 <%--Titulo. --%>
 	<header class="text-center">

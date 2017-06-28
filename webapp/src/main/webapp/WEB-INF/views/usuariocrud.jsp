@@ -25,7 +25,7 @@
 
 
 <%--Tabla que muestra los usuarios --%>
-<table border="1">
+<table class="table table-hover text-centered">
 
 <%--Cabecera de la tabla. --%>
 	<thead>
@@ -33,6 +33,7 @@
 			<th>Operaciones</th>
 			<th>Usuario</th>
 			<th>Contraseña</th>
+			<th>Nombre Completo</th>
 		</tr>
 	</thead>
 	
@@ -46,6 +47,7 @@
 				</td>
 				<td>${usuario.username}</td>
 				<td>${usuario.password}</td>
+				<td>${usuario.nombreCompleto}</td>
 			</tr>
 		</c:forEach>
 	</tbody>

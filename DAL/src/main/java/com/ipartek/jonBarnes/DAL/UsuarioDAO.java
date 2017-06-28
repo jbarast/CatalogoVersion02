@@ -8,6 +8,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import com.ipartek.jonBarnes.DAL.interfaces.UsuarioInterfaceDAO;
+import com.ipartek.jonBarnes.tipos.ROL;
 import com.ipartek.jonBarnes.tipos.Usuario;
 
 //import com.sun.istack.internal.NotNull;
@@ -46,11 +47,19 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	 */
 	@Override
 	public void insert(Usuario usuario) {
+
+		// Primero cargamos el rol.
+		ROLDAO rolDAO = new ROLDAO();
+		ROL rolUsuario;
+
+		rolUsuario = rolDAO.finByRol("Usuario");
+		usuario.setId_roles(rolUsuario);
+
 		// Para insertar un ROL.
 		manager.getTransaction().begin();
 		manager.merge(usuario);
 		manager.getTransaction().commit();
-		manager.close();
+		// manager.close();
 
 	}
 
@@ -61,7 +70,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		manager.getTransaction().begin();
 		manager.remove(usuario);
 		manager.getTransaction().commit();
-		manager.close();
+		// manager.close();
 
 	}
 
@@ -87,7 +96,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		usuarioBD.setNombreCompleto(usuario.getNombreCompleto());
 		usuarioBD.setPassword(usuario.getPassword());
 
-		manager.close();
+		// manager.close();
 
 	}
 
@@ -96,7 +105,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 
 		ArrayList<Usuario> usuarios = (ArrayList<Usuario>) manager.createQuery("FROM Usuario").getResultList();
 
-		manager.close();
+		// manager.close();
 
 		return usuarios.toArray(new Usuario[usuarios.size()]);
 
@@ -149,7 +158,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 			usuarioValido = true;
 		}
 
-		manager.close();
+		// manager.close();
 		return usuarioValido;
 	}
 }

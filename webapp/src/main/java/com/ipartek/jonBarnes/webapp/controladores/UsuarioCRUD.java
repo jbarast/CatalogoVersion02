@@ -55,14 +55,8 @@ public class UsuarioCRUD extends HttpServlet {
 		// Que hacer si la dao esta vacio.
 
 		if (dal == null) {
-			// Cargamos los usuarios de la base de datos.
-			System.out.println("Tenemos el usuarioDAO todo vacio");
-
 			//
 			application.setAttribute("dalUsuarios", usuarioDAO);
-
-			// Miramos que no sea null.
-			System.out.println(application.getAttribute("dalUsuarios"));
 		}
 
 		// Operaciones.

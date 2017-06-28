@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 /**
  * Para indicar el rol del usuario en la aplicacion.
@@ -16,7 +17,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name = "roles")
+@Table(name = "roles", uniqueConstraints = { @UniqueConstraint(columnNames = { "rol" }) })
 public class ROL implements Serializable {
 
 	private static final long serialVersionUID = 1L;

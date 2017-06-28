@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 /**
  * POJO usuario, para guardar datos de lo usuario.
@@ -19,7 +20,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name = "usuarios")
+@Table(name = "usuarios", uniqueConstraints = { @UniqueConstraint(columnNames = { "username" }) })
 public class Usuario implements Serializable {
 
 	// Al ser serializable parametro que necesita.
@@ -32,7 +33,7 @@ public class Usuario implements Serializable {
 	private long id;
 
 	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-	@JoinColumn(name = "id_rol")
+	@JoinColumn(name = "id_rol", nullable = false)
 	private ROL idRoles;
 
 	@Column(name = "username", unique = true)
