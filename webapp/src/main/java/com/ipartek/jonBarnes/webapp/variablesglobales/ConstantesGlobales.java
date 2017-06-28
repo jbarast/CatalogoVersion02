@@ -31,8 +31,8 @@ public class ConstantesGlobales {
 
 	// Rutas usuario crud
 
-	public static final String RUTA_FORMULARIO_USUARIO = "/WEB-INF/vistas/usuarioform.jsp";
-	public static final String RUTA_LISTADO_USUARIO = "/WEB-INF/vistas/usuariocrud.jsp";
+	public static final String RUTA_FORMULARIO_USUARIO = RUTA + "usuarioform.jsp";
+	public static final String RUTA_LISTADO_USUARIO = RUTA + "usuariocrud.jsp";
 	public static final String RUTA_SERVLET_LISTADO_USUARIO = "/usuariocrud";
 
 	// Rutas para el carrito.

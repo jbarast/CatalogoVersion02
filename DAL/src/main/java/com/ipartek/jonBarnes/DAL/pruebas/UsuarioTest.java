@@ -17,23 +17,12 @@ public class UsuarioTest {
 		ROLDAO rolDAO = new ROLDAO();
 		UsuarioInterfaceDAO usuarioDAO = new UsuarioDAO();
 
-		Usuario usuario = new Usuario("Usuario04", "pass014", "Nombre Completo usuario4");
+		Usuario[] usuarios;
 
-		Usuario usuarioImprimir = new Usuario();
+		usuarios = usuarioDAO.findAll();
 
-		usuarioDAO.insert(usuario);
-
-		usuarioImprimir = usuarioDAO.findByUsername("Usuario04");
-
-		System.out.println(usuarioImprimir);
-
-		usuario.setPassword("pass06Nuevo");
-
-		usuarioDAO.update(usuario);
-
-		usuarioImprimir = usuarioDAO.findByUsername("Usuario04");
-
-		System.out.println(usuarioImprimir);
+		for (Usuario usuario : usuarios)
+			System.out.println(usuario);
 
 	}
 }

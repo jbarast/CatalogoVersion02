@@ -50,6 +50,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		manager.getTransaction().begin();
 		manager.merge(usuario);
 		manager.getTransaction().commit();
+		manager.close();
 
 	}
 
@@ -60,6 +61,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		manager.getTransaction().begin();
 		manager.remove(usuario);
 		manager.getTransaction().commit();
+		manager.close();
 
 	}
 
@@ -85,6 +87,8 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		usuarioBD.setNombreCompleto(usuario.getNombreCompleto());
 		usuarioBD.setPassword(usuario.getPassword());
 
+		manager.close();
+
 	}
 
 	@Override
@@ -92,13 +96,19 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 
 		ArrayList<Usuario> usuarios = (ArrayList<Usuario>) manager.createQuery("FROM Usuario").getResultList();
 
+		manager.close();
+
 		return usuarios.toArray(new Usuario[usuarios.size()]);
 
 	}
 
 	@Override
 	public Usuario findById(long idUsuario) {
-		return manager.find(Usuario.class, idUsuario);
+
+		Usuario usuario = manager.find(Usuario.class, idUsuario);
+
+		return usuario;
+		// return manager.find(Usuario.class, idUsuario);
 
 	}
 
@@ -115,7 +125,9 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		query.setParameter("username", username);
 
 		// Ejecutamos la query.
-		return (Usuario) query.getSingleResult();
+		Usuario usuario = (Usuario) query.getSingleResult();
+		return usuario;
+		// return (Usuario) query.getSingleResult();
 
 	}
 
@@ -137,6 +149,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 			usuarioValido = true;
 		}
 
+		manager.close();
 		return usuarioValido;
 	}
 }
