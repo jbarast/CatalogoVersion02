@@ -54,5 +54,7 @@
 </table>
 
 
+
+
 <%--Pie de la pagina. --%>
 <%@ include file="includes/pie.jsp"%>

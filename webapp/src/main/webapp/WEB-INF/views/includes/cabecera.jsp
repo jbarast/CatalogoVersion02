@@ -21,10 +21,15 @@
 <!--Ficheros para llamar a bootstrap -->
 	<!--Cargamos la css de bootstrap-->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+	<!-- EL mio -->
+	<link rel="stylesheet" href="css/fondo.css">
 	<!--Metemos jquery-->
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<!--Metemos javaScript-->
 	<script src="js/bootstrap.min.js"></script>
+	
+
 </head>
 
 <%--Empieza el Codigo --%>
@@ -38,7 +43,7 @@
 	<nav>
 		<%--Botones en la parte superior. --%>
 			<a class="btn btn-default" href="productoform?op=alta" role="button">Alta Producto</a>
-			<a class="btn btn-default" href="productocrud" role="button">Mantenimiento productos</a>
+			<a class="btn btn-default" href="productoscrud" role="button">Mantenimiento productos</a>
 			
 			<a class="btn btn-default" href="usuarioform?op=alta" role="button">Alta Usuarios</a>
 			<a class="btn btn-default" href="usuariocrud" role="button">Mantenimiento usuarios</a>
