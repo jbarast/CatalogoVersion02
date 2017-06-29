@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.ParseException;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -15,8 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ipartek.jonBarnes.DAL.ProductoDAO;
+import com.ipartek.jonBarnes.tipos.Carrito;
 import com.ipartek.jonBarnes.tipos.Producto;
 import com.ipartek.jonBarnes.webapp.variablesglobales.ConstantesGlobales;
+import javafx.beans.binding.FloatExpression;
 
 /**
  * Controlador para la vista productosform.jsp
@@ -26,6 +29,9 @@ import com.ipartek.jonBarnes.webapp.variablesglobales.ConstantesGlobales;
  */
 public class ProductosFormServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
+
+    //TODO borrar.
+    List<Carrito> carritos = null;
 
     /**
      * Llamamos al metodo doPost().
@@ -54,12 +60,17 @@ public class ProductosFormServlet extends HttpServlet {
 
         // Cogiendo los datos
         String nombre = request.getParameter("nombre");
+        String id = request.getParameter("id");
 
         // Si la dal es null.
         if (dalProductos == null) {
 
             dalProductos = new ProductoDAO();
             applicationProductos.setAttribute("dalProductos", dalProductos);
+
+            //Carrito temporal
+            //TODO Mirar si esto funciona bien.
+            //List<Carrito> carritos = null;
 
         }
 
@@ -103,7 +114,7 @@ public class ProductosFormServlet extends HttpServlet {
         // Para pasar String to BigDecimal.
 
 
-       BigDecimal bigDecimalPrecio = new BigDecimal(precio);
+        BigDecimal bigDecimalPrecio = new BigDecimal(precio);
 
         producto.setPrecio(bigDecimalPrecio);
         producto.setStock(stock);
@@ -167,6 +178,12 @@ public class ProductosFormServlet extends HttpServlet {
                     dalProductos.delete(producto.getId());
                     request.getRequestDispatcher(ConstantesGlobales.RUTA_SERVLET_LISTADO).forward(request, response);
                     break;
+
+                case "anadir":
+                    producto = dalProductos.findById(Integer.parseInt(id));
+                    //Carrito productoCarrito = new Carrito(producto,)
+
+                    carritos.add(new Carrito(producto, 1));
             }
 
         } catch (Exception e) {

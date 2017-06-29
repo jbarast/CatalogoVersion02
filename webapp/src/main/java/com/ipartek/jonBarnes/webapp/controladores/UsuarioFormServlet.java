@@ -117,7 +117,7 @@ public class UsuarioFormServlet extends HttpServlet {
 
 						usuarioModificar = usuarioDAO.findById(Long.parseLong(id));
 						System.out.println("******" + usuarioModificar + "*******");
-						// Cambiamos la contraseña al usuario.
+						// Cambiamos la contraseï¿½a al usuario.
 						usuarioModificar.setPassword(pass);
 						usuarioModificar.setNombreCompleto(nombreCompleto);
 
@@ -154,6 +154,9 @@ public class UsuarioFormServlet extends HttpServlet {
 				rutaListado.forward(request, response);
 
 				break;
+
+
+
 			}
 		} catch (Exception e) {
 

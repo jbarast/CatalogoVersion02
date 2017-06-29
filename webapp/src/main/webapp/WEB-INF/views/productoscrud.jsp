@@ -33,6 +33,7 @@
 			<th>Precio</th>
 			<th>Stock</th>
 			<th>Imagen Producto</th>
+
 		</tr>
 	</thead>
 	<tbody>
@@ -50,6 +51,7 @@
 				<td>${producto.precio} €</td>
 				<td>${producto.stock}</td>
 				<td><IMG src="${producto.rutaImagen}" width="100" height="100"/></td>
+				<td><a href="?op=anadir&id=${producto.id}" class="btn btn-primary btn-lg active" role="button">Comprar</a></td>
 				
 			</tr>
 		</c:forEach>

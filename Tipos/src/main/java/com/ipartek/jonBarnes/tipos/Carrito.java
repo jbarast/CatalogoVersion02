@@ -30,6 +30,12 @@ public class Carrito extends Producto {
 		this.cantidad = cantidad;
 	}
 
+	public Carrito(Producto producto, int cantidad){
+
+		super(producto.getNombre(),producto.getDescripcion(),producto.getStock(),producto.getPrecio(),producto.getRutaImagen() );
+		this.cantidad = cantidad;
+	}
+
 	// Getters y setters.
 
 	public int getCantidad() {
