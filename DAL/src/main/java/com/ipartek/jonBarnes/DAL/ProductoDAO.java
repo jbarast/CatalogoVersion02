@@ -126,13 +126,18 @@ public class ProductoDAO implements ProductoInterfaceDAO {
 	@Override
 	public Producto findByUsername(String producto) {
 
+		// Creamos la variable bien.
+		String nombreCompleto = String.format("\'%s\'", producto);
+		System.out.println("Nombre del producto:  " + nombreCompleto);
+
 		// Creamos la query.
-		Query query = manager.createQuery("FROM Producto where username = :producto");
+		Query query = manager.createQuery("FROM Producto where nombre = :producto");
 
 		query.setParameter("producto", producto);
 
 		// Ejecutamos la query.
-		return (Producto) query.getSingleResult();
+		Producto productoBD = (Producto) query.getSingleResult();
+		return productoBD;
 	}
 
 }

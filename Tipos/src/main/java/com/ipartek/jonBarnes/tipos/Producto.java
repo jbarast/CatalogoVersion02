@@ -61,6 +61,16 @@ public class Producto implements Serializable {
 		this.rutaImagen = rutaImagen;
 	}
 
+	public Producto(String nombre, String descripcion, int stock, BigDecimal precio, String rutaImagen){
+		super();
+
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.stock = stock;
+		this.precio = precio;
+		this.rutaImagen = rutaImagen;
+	}
+
 	// Getters y Setters.
 	public long getId() {
 		return id;

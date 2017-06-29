@@ -19,6 +19,18 @@ public class UsuarioTest {
 
 		Usuario[] usuarios;
 
+		Usuario usuario02 = new Usuario();
+
+		usuario02.setUsername("Jon");
+		usuario02.setPassword("pass");
+
+		usuarioDAO.insert(usuario02);
+
+		usuarios = usuarioDAO.findAll();
+
+		usuarioDAO.update(usuario02);
+		usuario02.setNombreCompleto("Modificado");
+
 		usuarios = usuarioDAO.findAll();
 
 		for (Usuario usuario : usuarios)

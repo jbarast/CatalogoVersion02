@@ -42,7 +42,7 @@
 	</header>
 	<nav>
 		<%--Botones en la parte superior. --%>
-			<a class="btn btn-default" href="productoform?op=alta" role="button">Alta Producto</a>
+			<a class="btn btn-default" href="productosform?op=alta" role="button">Alta Producto</a>
 			<a class="btn btn-default" href="productoscrud" role="button">Mantenimiento productos</a>
 			
 			<a class="btn btn-default" href="usuarioform?op=alta" role="button">Alta Usuarios</a>
