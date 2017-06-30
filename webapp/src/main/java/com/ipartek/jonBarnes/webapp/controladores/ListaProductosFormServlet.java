@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -83,16 +82,16 @@ public class ListaProductosFormServlet extends HttpServlet {
 			// Si tenemos que a�adir un producto al carrito.
 		} else if (op.equals("anadir")) {
 
-			//Cargamos el producto.
+			// Cargamos el producto.
 			Producto productoAnadir = dalProductos.findById(Long.parseLong(id));
 
-			//Creamos el carrito.
-			Carrito carritoAnadir = new Carrito(productoAnadir,1);
+			// Creamos el carrito.
+			Carrito carritoAnadir = new Carrito(productoAnadir, 1);
 
 			carrito.add(carritoAnadir);
 
-			//Volvemos a la pagina listaproductos.
-			request.getRequestDispatcher(ConstantesGlobales.RUTA_SERVLET_LISTADO_PRODUCTOS_USUARIO).forward(request,response);
+			// Volvemos a la pagina listaproductos.
+			request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_PRODUCTOS_USUARIO).forward(request, response);
 
 		}
 
