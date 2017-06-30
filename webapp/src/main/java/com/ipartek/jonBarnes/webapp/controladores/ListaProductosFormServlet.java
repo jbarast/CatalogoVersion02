@@ -57,6 +57,10 @@ public class ListaProductosFormServlet extends HttpServlet {
 		// op.
 		String op = request.getParameter("opform");
 
+		System.out.println("*****************************************************");
+		System.out.println("*************************"+op+"*********************");
+		System.out.println("*****************************************************");
+
 		// Cogiendo los datos
 		String id = request.getParameter("id");
 
@@ -89,6 +93,15 @@ public class ListaProductosFormServlet extends HttpServlet {
 			Carrito carritoAnadir = new Carrito(productoAnadir, 1);
 
 			carrito.add(carritoAnadir);
+
+			//Sacamos por pantalla el carrito.
+			System.out.println("*****************************************************");
+			System.out.println("*************************CARRITO*********************");
+			System.out.println("*****************************************************");
+			for(Carrito carritoPantalla: carrito)
+				System.out.println(carritoPantalla);
+
+			applicationProductos.setAttribute("carrito", carrito);
 
 			// Volvemos a la pagina listaproductos.
 			request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_PRODUCTOS_USUARIO).forward(request, response);

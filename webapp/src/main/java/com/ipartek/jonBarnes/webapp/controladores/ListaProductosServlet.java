@@ -75,7 +75,7 @@ public class ListaProductosServlet extends HttpServlet {
 
 			producto = dalProductos.findById(Integer.parseInt(id));
 			request.setAttribute("producto", producto);
-			request.getRequestDispatcher(ConstantesGlobales.RUTA_FORMULARIO_PRODUCTOS_USUARIO).forward(request,
+			request.getRequestDispatcher(ConstantesGlobales.RUTA_SERVLET_FORMULARIO_PRODUCTOS_USUARIO).forward(request,
 					response);
 
 		}
