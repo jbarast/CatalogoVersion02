@@ -1,4 +1,4 @@
-//ProductosCRUDServlet.java
+//ListaProductosServlet.java
 
 package com.ipartek.jonBarnes.webapp.controladores;
 
@@ -15,25 +15,28 @@ import com.ipartek.jonBarnes.tipos.Producto;
 import com.ipartek.jonBarnes.webapp.variablesglobales.ConstantesGlobales;
 
 /**
- * Servlet implementation class ProductosCRUDServlet
+ * Servlet para la vista de compras de productos.
+ * 
+ * @author jonBarnes
+ * @version 30/06/2017
  */
-public class ProductosCRUDServlet extends HttpServlet {
+public class ListaProductosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
+	 * 
 	 * Llamamos al metodo doPost().
-	 *
+	 * 
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 		doPost(request, response);
 	}
 
 	/**
-	 * Metodo principal de la servlet.
-	 *
+	 * En este metodo lo que vemos es la vista de compras de productos.
+	 * 
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
@@ -55,51 +58,25 @@ public class ProductosCRUDServlet extends HttpServlet {
 
 		// Creamos op.
 		String op = request.getParameter("op");
+		String id = request.getParameter("id");
 
-		try {
-			if (op == null) {
+		if (op == null) {
 
-				Producto[] productos = dalProductos.findAll();
-				// Miramos como da el dato.
-				// Por si queremos ver los productos que tenemos en el log.
-				// for (int i = 0; i < productos.length; i++) {
-				// log.info(String.format("Que tiene el carrito?? %s",
-				// productos[i]));
-				// }
-				request.setAttribute("productos", productos);
-				request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO).forward(request, response);
-			} else {
+			// Sacamos la lista de productos.
+			Producto[] productos = dalProductos.findAll();
 
-				// System.out.println(request.getParameter("id"));
+			request.setAttribute("productos", productos);
+			request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_PRODUCTOS_USUARIO).forward(request, response);
 
-				String id = request.getParameter("id");
-				System.out.println("El di del getParameter: " + id);
-				// System.out.println(id);
+		} else if (op.equals("anadir")) {
 
-				Producto producto;
+			// Creamos el objeto.
+			Producto producto;
 
-				switch (op) {
-				case "modificar":
-				case "borrar":
-					producto = dalProductos.findById(Integer.parseInt(id));
-					request.setAttribute("producto", producto);
-				case "alta":
-					request.getRequestDispatcher(ConstantesGlobales.RUTA_FORMULARIO).forward(request, response);
-					break;
-
-				default:
-					request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO).forward(request, response);
-				}
-			}
-		} catch (Exception e) {
-
-			// TODO arreglar esto.
-			try {
-				throw new Exception("Error en las operaciones con la base de datos.", e);
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+			producto = dalProductos.findById(Integer.parseInt(id));
+			request.setAttribute("producto", producto);
+			request.getRequestDispatcher(ConstantesGlobales.RUTA_FORMULARIO_PRODUCTOS_USUARIO).forward(request,
+					response);
 
 		}
 

@@ -1,9 +1,9 @@
-<%--productocrud.jsp --%>
+<%--listaproductos.jsp --%>
 
 <%--
-     Vista para productocrud.
+     Vista para listaproductos.
      autor= jonBarnes
-     version = 09/05/2017
+     version = 30/06/2017
 
  --%>
 
@@ -19,20 +19,20 @@
 
 
 <%--Titulo --%>
-<h2>Mantenimiento de productos.</h2>
+<h2>Lista de productos.</h2>
 <%--Tabla --%>
 <table class="table table-hover text-centered">
 
 <%--Titulos de las columnas. --%>
 	<thead>
 		<tr>
-			<th>Operaciones</th>
 			<th>Id</th>
 			<th>Nombre</th>
 			<th>Descripcion</th>
 			<th>Precio</th>
 			<th>Stock</th>
 			<th>Imagen Producto</th>
+			<th>Añadir al Carrito</th>
 
 		</tr>
 	</thead>
@@ -41,17 +41,13 @@
 	<%--Bucle de lectura de elementos de la tienda. --%>
 		<c:forEach items="${requestScope.productos}" var="producto">
 			<tr>
-				<td>
-					<a href="?op=modificar&id=${producto.id}">Modificar</a>
-					<a href="?op=borrar&id=${producto.id}">Borrar</a>
-				</td>
 				<td>${producto.id}</td>
 				<td>${producto.nombre}</td>
 				<td>${producto.descripcion}</td>
 				<td>${producto.precio} €</td>
 				<td>${producto.stock}</td>
 				<td><IMG src="${producto.rutaImagen}" width="100" height="100"/></td>
-				
+				<td><a href="?op=anadir&id=${producto.id}" class="btn btn-primary btn-lg active" role="button">Comprar</a></td>
 				
 			</tr>
 		</c:forEach>
