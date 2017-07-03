@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.ipartek.jonBarnes.DAL.ProductoDAO;
 import com.ipartek.jonBarnes.tipos.Carrito;
@@ -52,15 +53,25 @@ public class ListaProductosFormServlet extends HttpServlet {
 		ServletContext applicationProductos = getServletContext();
 		ProductoDAO dalProductos = (ProductoDAO) applicationProductos.getAttribute("dalProductos");
 
+		// La sesion.
+		HttpSession session = request.getSession();
+
 		// EL carrito.
-		List<Carrito> carrito = null;
+		List<Carrito> carrito = new ArrayList<Carrito>();
+		carrito = (ArrayList<Carrito>) session.getAttribute("carrito");
+
+		// El carrito en este moments.
+		System.out.println("Carrito inicializado: " + carrito);
 		// op.
 		String op = request.getParameter("opform");
+		// TODO puenteo
+		op = "anadir";
 
 		System.out.println("*****************************************************");
-		System.out.println("*************************"+op+"*********************");
+		System.out.println("*************************" + op + "*********************");
 		System.out.println("*****************************************************");
 
+		System.out.println(op);
 		// Cogiendo los datos
 		String id = request.getParameter("id");
 
@@ -69,12 +80,6 @@ public class ListaProductosFormServlet extends HttpServlet {
 
 			dalProductos = new ProductoDAO();
 			applicationProductos.setAttribute("dalProductos", dalProductos);
-		}
-
-		if (carrito == null) {
-
-			carrito = new ArrayList<Carrito>();
-			applicationProductos.setAttribute("carrito", carrito);
 		}
 
 		// Si no hay op, mostramos los productos.
@@ -89,19 +94,19 @@ public class ListaProductosFormServlet extends HttpServlet {
 			// Cargamos el producto.
 			Producto productoAnadir = dalProductos.findById(Long.parseLong(id));
 
+			System.out.println("Id del producto : " + id);
+
 			// Creamos el carrito.
 			Carrito carritoAnadir = new Carrito(productoAnadir, 1);
 
+			System.out.println("Producto a añadir: " + carritoAnadir);
 			carrito.add(carritoAnadir);
 
-			//Sacamos por pantalla el carrito.
-			System.out.println("*****************************************************");
-			System.out.println("*************************CARRITO*********************");
-			System.out.println("*****************************************************");
-			for(Carrito carritoPantalla: carrito)
+			// Para ver el carrito.
+			for (Carrito carritoPantalla : carrito)
 				System.out.println(carritoPantalla);
 
-			applicationProductos.setAttribute("carrito", carrito);
+			session.setAttribute("carrito", carrito);
 
 			// Volvemos a la pagina listaproductos.
 			request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_PRODUCTOS_USUARIO).forward(request, response);

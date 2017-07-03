@@ -47,8 +47,8 @@
             <td>${carrito.producto.descripcion}</td>
             <td>${carrito.producto.precio} €</td>
             <td>${carrito.producto.stock}</td>
-            <td>${producto.cantidad}</td>
-            <td><IMG src="${producto.rutaImagen}" width="100" height="100"/></td>
+            <td>${carrito.cantidad}</td>
+            <td><IMG src="${carrito.producto.rutaImagen}" width="100" height="100"/></td>
         </tr>
     </c:forEach>
     </tbody>

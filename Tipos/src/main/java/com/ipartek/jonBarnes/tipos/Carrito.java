@@ -1,11 +1,12 @@
 package com.ipartek.jonBarnes.tipos;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * Created by JAVA on 29/06/2017.
  */
-public class Carrito extends Producto {
+public class Carrito extends Producto implements Serializable {
 
 	/**
 	 * 
@@ -30,9 +31,10 @@ public class Carrito extends Producto {
 		this.cantidad = cantidad;
 	}
 
-	public Carrito(Producto producto, int cantidad){
+	public Carrito(Producto producto, int cantidad) {
 
-		super(producto.getNombre(),producto.getDescripcion(),producto.getStock(),producto.getPrecio(),producto.getRutaImagen() );
+		super(producto.getNombre(), producto.getDescripcion(), producto.getStock(), producto.getPrecio(), producto
+				.getRutaImagen());
 		this.cantidad = cantidad;
 	}
 
@@ -50,7 +52,7 @@ public class Carrito extends Producto {
 
 	@Override
 	public String toString() {
-		return "Carrito{" + "cantidad=" + cantidad + '}';
+		return "Carrito{Producto: " + super.getNombre() + "cantidad=" + cantidad + '}';
 	}
 
 	@Override
