@@ -52,17 +52,27 @@ public class CarritoCRUDServlet extends HttpServlet {
 		// EL carrito.
 		ArrayList<Carrito> carrito;
 		carrito = (ArrayList<Carrito>) session.getAttribute("carrito");
+
+		//si es null creamos el carrito.
+		if(carrito == null){
+			carrito = new ArrayList<Carrito>();
+		}
+
 		// op.
 		String op = request.getParameter("opform");
 
-		// TODO quitar esto.
-		for (Carrito carritoProducto : carrito)
-			System.out.println("El carrito" + carritoProducto);
+
 
 		// Las operaciones.
 		// Si no hay op, mostramos los productos.
 
 		if (op == null) {
+
+			// TODO quitar esto.
+			for (Carrito carritoProducto : carrito)
+				System.out.println("El carrito" + carritoProducto);
+
+			request.setAttribute("carrito", carrito);
 
 			request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_CARRITO).forward(request, response);
 

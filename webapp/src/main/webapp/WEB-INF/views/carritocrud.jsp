@@ -42,13 +42,9 @@
     <%--Bucle de lectura de elementos de la tienda. --%>
     <c:forEach items="${requestScope.carrito}" var="carrito">
         <tr>
-            <td>${carrito.producto.id}</td>
-            <td>${carrito.producto.nombre}</td>
-            <td>${carrito.producto.descripcion}</td>
-            <td>${carrito.producto.precio} €</td>
-            <td>${carrito.producto.stock}</td>
+
             <td>${carrito.cantidad}</td>
-            <td><IMG src="${carrito.producto.rutaImagen}" width="100" height="100"/></td>
+
         </tr>
     </c:forEach>
     </tbody>
