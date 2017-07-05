@@ -42,7 +42,12 @@
     <%--Bucle de lectura de elementos de la tienda. --%>
     <c:forEach items="${requestScope.carrito}" var="carrito">
         <tr>
-
+            <td>${carrito.id}</td>
+            <td>${carrito.nombre}</td>
+            <td>${carrito.descripcion}</td>
+            <td>${carrito.precio}</td>
+            <td>${carrito.stock}</td>
+            <td>${carrito.rutaImagen}</td>
             <td>${carrito.cantidad}</td>
 
         </tr>
