@@ -30,7 +30,7 @@ public class ROLDAO implements ROLInterfaceDAO {
 	public ROLDAO() {
 
 		// Cuando inicie el dao, que instancie el manager y el emf.
-		emf = Persistence.createEntityManagerFactory("Persistencia");
+		emf = Persistence.createEntityManagerFactory("PersistenceSQLServer");
 		manager = emf.createEntityManager();
 	}
 

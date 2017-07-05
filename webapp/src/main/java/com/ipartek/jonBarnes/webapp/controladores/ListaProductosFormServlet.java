@@ -57,8 +57,12 @@ public class ListaProductosFormServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 
 		// EL carrito.
-		List<Carrito> carrito = new ArrayList<Carrito>();
+		List<Carrito> carrito = null;
 		carrito = (ArrayList<Carrito>) session.getAttribute("carrito");
+
+		if (carrito==null){
+			carrito = new ArrayList<Carrito>();
+		}
 
 		// El carrito en este moments.
 		System.out.println("Carrito inicializado: " + carrito);
@@ -94,12 +98,15 @@ public class ListaProductosFormServlet extends HttpServlet {
 			// Cargamos el producto.
 			Producto productoAnadir = dalProductos.findById(Long.parseLong(id));
 
+			//Miramos el producto que pilla.
+			System.out.println(productoAnadir);
+
 			System.out.println("Id del producto : " + id);
 
 			// Creamos el carrito.
 			Carrito carritoAnadir = new Carrito(productoAnadir, 1);
 
-			System.out.println("Producto a añadir: " + carritoAnadir);
+			System.out.println("Producto a aÃ±adir: " + carritoAnadir);
 			carrito.add(carritoAnadir);
 
 			// Para ver el carrito.

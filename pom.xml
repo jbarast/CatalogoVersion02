@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ipartek.jonBarnes</groupId>
-  <artifactId>CatalogoVersion02</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-  
- 
- <!-- Para indicar en que version de java compilamos??? --> 
-  <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ipartek.jonBarnes</groupId>
+    <artifactId>CatalogoVersion02</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+    <!-- Para indicar en que version de java compilamos??? -->
+    <build>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -23,71 +23,79 @@
             </plugins>
         </pluginManagement>
     </build>
-    
- <!-- Las dependencias. -->   
-<dependencies>
 
-<!-- JUnit para hacer tests -->
+    <!-- Las dependencias. -->
+    <dependencies>
+
+        <!-- JUnit para hacer tests -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        
-<!-- Para hacer el log. -->        
-       <dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
-</dependency>
 
-<!-- Para JPA + Hibernate -->
+        <!-- Para hacer el log. -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
 
-<!-- Hibernate -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.2.10.Final</version>
-</dependency>
+        <!-- Para JPA + Hibernate -->
 
-<!-- Por si las moscas la persistence api, en java ee viene incluida -->
-<dependency>
-    <groupId>javax.persistence</groupId>
-    <artifactId>persistence-api</artifactId>
-    <version>1.0.2</version>
-</dependency>
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
 
-<!-- Mirar bien para que es esto -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-entitymanager</artifactId>
-    <version>5.2.10.Final</version>
-</dependency>
+        <!-- Por si las moscas la persistence api, en java ee viene incluida -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
 
-<!-- Conector Mysql -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>6.0.6</version>
-</dependency>
+        <!-- Mirar bien para que es esto -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
 
-<!-- https://mvnrepository.com/artifact/com.sun.istack/maven-istack-commons-plugin -->
-<dependency>
-    <groupId>com.sun.istack</groupId>
-    <artifactId>maven-istack-commons-plugin</artifactId>
-    <version>2.11</version>
-</dependency>
+        <!-- Conector Mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+
+        <!-- Conector SQL Server -->
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>6.2.0.jre8</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sun.istack/maven-istack-commons-plugin -->
+        <dependency>
+            <groupId>com.sun.istack</groupId>
+            <artifactId>maven-istack-commons-plugin</artifactId>
+            <version>2.11</version>
+        </dependency>
 
 
-</dependencies>
+    </dependencies>
 
 
-<!-- Los modulos que utiliza este proyecto -->
+    <!-- Los modulos que utiliza este proyecto -->
 
- <modules>
-    <module>Tipos</module>
-    <module>DAL</module>
-    <module>webapp</module>
-  </modules>
+    <modules>
+        <module>Tipos</module>
+        <module>DAL</module>
+        <module>webapp</module>
+    </modules>
 </project>

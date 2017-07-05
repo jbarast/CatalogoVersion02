@@ -29,7 +29,7 @@ public class ProductoDAO implements ProductoInterfaceDAO {
 	// Constructor.
 	public ProductoDAO() {
 		// Cuando inicie el dao, que instancie el manager y el emf.
-		emf = Persistence.createEntityManagerFactory("Persistencia");
+		emf = Persistence.createEntityManagerFactory("PersistenceSQLServer");
 		manager = emf.createEntityManager();
 	}
 

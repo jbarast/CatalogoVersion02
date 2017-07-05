@@ -30,6 +30,7 @@
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.2.10.Final" />
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.6.6" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:6.2.0.jre8" />
           <element id="library" level="project" name="Maven: com.sun.istack:maven-istack-commons-plugin:2.11" />
           <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:2.0" />
           <element id="library" level="project" name="Maven: org.apache.maven.shared:file-management:1.2" />

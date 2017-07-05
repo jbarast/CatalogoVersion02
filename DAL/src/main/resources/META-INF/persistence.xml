@@ -4,35 +4,54 @@
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 
-<!-- Nombre por el cual llamamos al archivo. -->
-  <persistence-unit name="Persistencia"> 
-  
-  <!-- Las clases que afecta la Persistencia -->
-  <class>com.ipartek.jonBarnes.tipos.Usuario</class>
-  <class>com.ipartek.jonBarnes.tipos.ROL</class>
-  <class>com.ipartek.jonBarnes.tipos.Producto</class>
-  
-  <!-- Propiedades de la JPA. -->
-    <properties>
-    <!-- Ponemos el driver de la base de datos que estamos utilizando. -->
-        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-        <!-- Ponemos la url de la base de datos. -->
-        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/catalogo02?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
-        <!-- El nombre del usuario -->
-        <property name="javax.persistence.jdbc.user" value="root" />
-        <!-- EL password del usuario. -->
-        <property name="javax.persistence.jdbc.password" value="" />
-        
-        
-        <!-- Propiedades de Hibernate -->
-        
-        <!-- Dialecto de SQL -->
-        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />      
-        <!-- Permisos que damos de creacion de tablas -->
-        <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- Solo de creacion de tablas. -->
-        <!-- Si queremos que muestre las sentencias de SQL que genera o no -->
-        <property name="hibernate.show_sql" value="true"/> <!-- Para la parte de desarrollo, despues quitarlo. -->
-    </properties>
-  </persistence-unit>
+    <!-- Nombre por el cual llamamos al archivo. -->
+    <persistence-unit name="Persistencia">
+
+        <!-- Las clases que afecta la Persistencia -->
+        <class>com.ipartek.jonBarnes.tipos.Usuario</class>
+        <class>com.ipartek.jonBarnes.tipos.ROL</class>
+        <class>com.ipartek.jonBarnes.tipos.Producto</class>
+
+        <!-- Propiedades de la JPA. -->
+        <properties>
+            <!-- Ponemos el driver de la base de datos que estamos utilizando. -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <!-- Ponemos la url de la base de datos. -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Catalogo02?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            <!-- El nombre del usuario -->
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <!-- EL password del usuario. -->
+            <property name="javax.persistence.jdbc.password" value="" />
+
+
+            <!-- Propiedades de Hibernate -->
+
+            <!-- Dialecto de SQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <!-- Permisos que damos de creacion de tablas -->
+            <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- Solo de creacion de tablas. -->
+            <!-- Si queremos que muestre las sentencias de SQL que genera o no -->
+            <property name="hibernate.show_sql" value="true"/> <!-- Para la parte de desarrollo, despues quitarlo. -->
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="PersistenceSQLServer"
+                      transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Las clases que afecta la Persistencia -->
+        <class>com.ipartek.jonBarnes.tipos.Usuario</class>
+        <class>com.ipartek.jonBarnes.tipos.ROL</class>
+        <class>com.ipartek.jonBarnes.tipos.Producto</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=ipartek;user=sa;password=Forma2017;"/>
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+
+
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2008Dialect" />
+            <!--<property name="hibernate.dialect" value="org.phstudy.sample.CustomSqlServerDialect" />-->
+            <property name="hibernate.show_sql" value="true" />
+        </properties>
+    </persistence-unit>
 
 </persistence>

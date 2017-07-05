@@ -33,7 +33,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	// Constructor.
 	public UsuarioDAO() {
 		// Cuando inicie el dao, que instancie el manager y el emf.
-		emf = Persistence.createEntityManagerFactory("Persistencia");
+		emf = Persistence.createEntityManagerFactory("PersistenceSQLServer");
 		manager = emf.createEntityManager();
 	}
 
