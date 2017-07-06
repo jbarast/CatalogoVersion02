@@ -26,7 +26,7 @@
     <%--Titulos de las columnas. --%>
     <thead>
     <tr>
-        <th>Id</th>
+
         <th>Nombre</th>
         <th>Descripcion</th>
         <th>Precio</th>
@@ -42,12 +42,12 @@
     <%--Bucle de lectura de elementos de la tienda. --%>
     <c:forEach items="${requestScope.carrito}" var="carrito">
         <tr>
-            <td>${carrito.id}</td>
+
             <td>${carrito.nombre}</td>
             <td>${carrito.descripcion}</td>
             <td>${carrito.precio}</td>
             <td>${carrito.stock}</td>
-            <td>${carrito.rutaImagen}</td>
+            <td><IMG src="${carrito.rutaImagen}" width="100" height="100"/></td>
             <td>${carrito.cantidad}</td>
 
         </tr>
@@ -55,7 +55,8 @@
     </tbody>
 </table>
 
-
+<!--Boton para comprar -->
+<a class="btn btn-default" href="factura" role="button">Comprar</a>
 
 <%--pie --%>
 <%@ include file="includes/pie.jsp"%>
