@@ -27,6 +27,7 @@ public class PruebaTipoEnityFacturas {
         //Primero iniciamos la conexion con la base de datos.
         // Cuando inicie el dao, que instancie el manager y el emf.
         emf = Persistence.createEntityManagerFactory("PersistenceSQLServer");
+        crearDatos();
     }
 
 
@@ -62,6 +63,9 @@ public class PruebaTipoEnityFacturas {
         Factura factura02 = new Factura(carrito02,listaFactura);
 
         manager.getTransaction().begin();
+        manager.merge(listaFactura);
+        manager.merge(factura01);
+        manager.merge(factura02);
 
         manager.getTransaction().commit();
 
