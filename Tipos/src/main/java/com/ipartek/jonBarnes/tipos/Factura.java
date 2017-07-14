@@ -3,76 +3,92 @@
 package com.ipartek.jonBarnes.tipos;
 
 import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
 
 /**
- *
- * Esta clase son los productos con cada factura.
+ * Tipo factura.
  *
  * @author jonBarnes
- * @version 06/07/2017
+ * @version 07/07/2017
  *
- * Created by jonBarnes on 06/07/2017.
+ * Created by jonBarnes on 07/07/2017.
  */
 @Entity
-@Table(name = "facturas")
+@Table(name="facturas")
 public class Factura {
 
-    //Atributos.
+    //atributos.
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = "id")
-    private long id;
+    private Long id;
 
-    @Column(name="productos")
-    private Carrito carrito;
+    @ManyToOne
+    @JoinColumn(name = "id", nullable = false)
+    private Usuario usuario;
 
+    @ManyToMany(mappedBy ="facturas",cascade = CascadeType.PERSIST)
+    private List<Producto> productos;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_factura")
-    private ListaFactura listaFactura;
+    @Column(name = "cantidad")
+    private List<Integer> cantidad;
 
-    //constructor.
+    @Column(name ="fecha")
+    private Date date;
+
+    //Constructor.
 
 
     public Factura() {
     }
 
-    public Factura(Carrito carrito, ListaFactura listaFactura) {
-        this.carrito = carrito;
-        this.listaFactura = listaFactura;
-    }
-
     //getters y setters.
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Carrito getCarrito() {
-        return carrito;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setCarrito(Carrito carrito) {
-        this.carrito = carrito;
+    public Date getDate() {
+        return date;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
+    }
+
+    public List<Integer> getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(List<Integer> cantidad) {
+        this.cantidad = cantidad;
+    }
+
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
 
 
-    public ListaFactura getListaFactura() {
-        return listaFactura;
-    }
-
-    public void setListaFactura(ListaFactura listaFactura) {
-        this.listaFactura = listaFactura;
-    }
-
-
-
-    //otros metodos.
-
+    //Otros metodos.
 
     /**
      * Metodo toString().
@@ -82,8 +98,10 @@ public class Factura {
     public String toString() {
         return "Factura{" +
                 "id=" + id +
-                ", carrito=" + carrito +
-                ", listaFactura=" + listaFactura +
+                ", usuario=" + usuario +
+                ", productos=" + productos +
+                ", cantidad=" + cantidad +
+                ", fecha=" + date +
                 '}';
     }
 
@@ -99,9 +117,10 @@ public class Factura {
 
         Factura factura = (Factura) o;
 
-        if (id != factura.id) return false;
-        if (carrito != null ? !carrito.equals(factura.carrito) : factura.carrito != null) return false;
-        return listaFactura != null ? listaFactura.equals(factura.listaFactura) : factura.listaFactura == null;
+        if (id != null ? !id.equals(factura.id) : factura.id != null) return false;
+        if (usuario != null ? !usuario.equals(factura.usuario) : factura.usuario != null) return false;
+        if (productos != null ? !productos.equals(factura.productos) : factura.productos != null) return false;
+        return cantidad != null ? cantidad.equals(factura.cantidad) : factura.cantidad == null;
     }
 
     /**
@@ -110,9 +129,10 @@ public class Factura {
      */
     @Override
     public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (carrito != null ? carrito.hashCode() : 0);
-        result = 31 * result + (listaFactura != null ? listaFactura.hashCode() : 0);
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (usuario != null ? usuario.hashCode() : 0);
+        result = 31 * result + (productos != null ? productos.hashCode() : 0);
+        result = 31 * result + (cantidad != null ? cantidad.hashCode() : 0);
         return result;
     }
 }

@@ -2,13 +2,10 @@ package com.ipartek.jonBarnes.tipos;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 
 /**
  * POJO producto.
@@ -43,6 +40,10 @@ public class Producto implements Serializable {
 
 	@Column(name = "Imagen")
 	private String rutaImagen;
+
+	@ManyToMany(cascade = CascadeType.PERSIST)
+	@JoinTable(name="productosFacturas", joinColumns = @JoinColumn(name = "factura_id"),inverseJoinColumns = @JoinColumn(name="producto_id"))
+	private List<Factura> facturas = new ArrayList<Factura>();
 
 	// Constructores.
 	public Producto() {
@@ -108,6 +109,15 @@ public class Producto implements Serializable {
 	public void setRutaImagen(String rutaImagen) {
 		this.rutaImagen = rutaImagen;
 	}
+
+	public List<Factura> getFacturas() {
+		return facturas;
+	}
+
+	public void setFacturas(List<Factura> facturas) {
+		this.facturas = facturas;
+	}
+
 
 	// Otros metodos.
 

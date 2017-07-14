@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250c9a3d-69ee-487d-ae61-3de8196d5d0f" name="Default" comment="" />
+    <list default="true" id="250c9a3d-69ee-487d-ae61-3de8196d5d0f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ListaFactura.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/Producto.class" afterPath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/Producto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/ROL.class" afterPath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/ROL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/Usuario.class" afterPath="$PROJECT_DIR$/Tipos/target/classes/com/ipartek/jonBarnes/tipos/Usuario.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CatalogoVersion02.iml" afterPath="$PROJECT_DIR$/CatalogoVersion02.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java" afterPath="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java" afterPath="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/webapp/target/" />
     <ignored path="$PROJECT_DIR$/DAL/target/" />
     <ignored path="$PROJECT_DIR$/Tipos/target/" />
@@ -13,58 +23,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="CatalogoVersion02" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ListaFactura.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ListaFactura.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PruebaTipoEnityFacturas.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/PruebaTipoEnityFacturas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Factura.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+            <state relative-caret-position="1122">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Producto.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+              <folding>
+                <element signature="e#1030#1039#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#2218#2219#0" expanded="true" />
+                <element signature="e#2249#2250#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +94,6 @@
         <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/includes/cabecera.jsp" />
         <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ROL.java" />
         <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java" />
-        <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/productoscrud.jsp" />
         <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Carrito.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosCRUDServlet.java" />
@@ -123,8 +116,13 @@
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/CarritoCRUDServlet.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/carritocrud.jsp" />
         <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ListaFactura.java" />
-        <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/PruebaTipoEnityFacturas.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/51b9196f-b971-4f6a-a1f6-d5030d2197ee/console.sql" />
+        <option value="dbtable:/afe47288/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/SYSTEM.USUARIOS" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7eb0303-36b5-48c1-9674-c8968b958c26/console.sql" />
+        <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java" />
+        <option value="$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java" />
       </list>
     </option>
   </component>
@@ -140,6 +138,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -168,7 +169,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -182,8 +183,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schema" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,47 +245,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="CatalogoVersion02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CatalogoVersion02" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tipos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CatalogoVersion02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="Tipos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tipos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="com.ipartek.jonBarnes.tipos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;SQL Server (Microsoft)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellij/POJOS" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="51b9196f-b971-4f6a-a1f6-d5030d2197ee" />
   </component>
   <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.ipartek.jonBarnes" />
+      <recent name="" />
+      <recent name="samples.ejb" />
+      <recent name="com.microsoft.pruebas" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JAVA\workspace\CatalogoVersion02\webapp\src\main\webapp\WEB-INF\views" />
     </key>
@@ -672,6 +717,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="250c9a3d-69ee-487d-ae61-3de8196d5d0f" name="Default" comment="" />
@@ -688,12 +736,24 @@
       <workItem from="1498836374002" duration="5191000" />
       <workItem from="1499261912771" duration="9016000" />
       <workItem from="1499345561654" duration="8226000" />
-      <workItem from="1499359722405" duration="993000" />
+      <workItem from="1499359722405" duration="1316000" />
+      <workItem from="1499435067498" duration="4470000" />
+      <workItem from="1499691568831" duration="12163000" />
+      <workItem from="1499778036105" duration="377000" />
+      <workItem from="1500049939207" duration="747000" />
     </task>
+    <task id="LOCAL-00001" summary="Relacion faturas productos, en pricipio hecha.&#10;Falta:&#10;--Mirar getters y setters.&#10;--Mirar donde poner los metodos add y remove.&#10;--Mirar relacion @OneToMany Usuario facturas @ManyToOne.&#10;&#10;@jbarast">
+      <created>1500050368648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1500050368648</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35555000" />
+    <option name="totallyTimeSpent" value="53635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,77 +770,121 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31240544" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2913257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.4902439" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2913257" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.53846157" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24357034" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5097561" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31240544" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2913257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.4902439" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2913257" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397882" sideWeight="0.53846157" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24357034" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5097561" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Relacion faturas productos, en pricipio hecha.&#10;Falta:&#10;--Mirar getters y setters.&#10;--Mirar donde poner los metodos add y remove.&#10;--Mirar relacion @OneToMany Usuario facturas @ManyToOne.&#10;&#10;@jbarast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Relacion faturas productos, en pricipio hecha.&#10;Falta:&#10;--Mirar getters y setters.&#10;--Mirar donde poner los metodos add y remove.&#10;--Mirar relacion @OneToMany Usuario facturas @ManyToOne.&#10;&#10;@jbarast" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -791,230 +895,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductosform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="126" lean-forward="false" selection-start-line="94" selection-start-column="126" selection-end-line="94" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductosform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/productoscrud.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Carrito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="14" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ROL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/UsuarioFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="157" column="16" lean-forward="false" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosCRUDServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/productosform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="113" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosFormServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="53" column="84" lean-forward="false" selection-start-line="53" selection-start-column="84" selection-end-line="53" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductosform.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="49" column="65" lean-forward="false" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,13 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/UsuarioCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="69" column="55" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/carritocrud.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1099,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
           <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,57 +1000,667 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ListaFactura.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="54" lean-forward="false" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Carrito.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/PruebaTipoEnityFacturas.java" />
+    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ListaFactura.java" />
+    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/META-INF/INDEX.LIST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/513fc5c2-733e-4606-b0f6-b94f4f7157b0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/51b9196f-b971-4f6a-a1f6-d5030d2197ee/ipartek.dbo.sysdiagrams">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/51b9196f-b971-4f6a-a1f6-d5030d2197ee/ipartek.dbo.hibernate_sequence">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="%%physloc%%" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/51b9196f-b971-4f6a-a1f6-d5030d2197ee">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>51b9196f-b971-4f6a-a1f6-d5030d2197ee</OriginalElement>
+          <nodes>
+            <node x="" y="">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.hibernate_sequence</node>
+            <node x="" y="">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.productos</node>
+            <node x="" y="">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.roles</node>
+            <node x="" y="">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.sysdiagrams</node>
+            <node x="" y="">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.usuarios</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="210.0" y="236.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/UsuarioCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="53" column="84" lean-forward="false" selection-start-line="53" selection-start-column="84" selection-end-line="53" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="45" column="125" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ROL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/51b9196f-b971-4f6a-a1f6-d5030d2197ee/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b</OriginalElement>
+          <nodes>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_PARAMETER$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_ENC$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRC_GSBA</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_GROUPED_COLUMN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_COLTYPE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.AQ$_INTERNET_AGENT_PRIVS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_CONFLICT</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_ORIGIN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRC_GTLO</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_FLAVOR_OBJECTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.OL$HINTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_RESOL_STATS_CONTROL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_GT_USER_INCLUDE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.PRODUCT_PRIVS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_TARGETS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_EXCEPTIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_LOGMNR_BUILDLOG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_BASETABLE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPGROUP_PRIVS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$SCN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.AQ$_DEF$_AQERROR_F</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_USER_PARM_VALUES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRC_GTCS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.OL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$SKIP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_GT_XID_INCLUDE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_REFCON$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_PLAN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPSCHEMA</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SEED$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRC_GSII</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$EDS_TABLES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.AQ$_DEF$_AQCALL_F</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_LOBFRAG$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_LEVEL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRT_MDDL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPCOLUMN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_INSTANTIATION_DDL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_FILTER$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_FLAVORS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_PARAMETER_COLUMN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.AQ$_QUEUE_TABLES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_LOG$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_FJG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_INTEGRATED_SPILL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_USER$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_RUNTIME_PARMS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_RESTART_CKPT$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_WORKLOAD</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_NTAB$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_GLOBAL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_LOG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_AUDIT_ATTRIBUTE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_AUDIT_COLUMN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_GENERATED</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$SKIP_SUPPORT</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REFRESH_TEMPLATES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRP_CTAS_PART_MAP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_GC</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_INFO</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_RESOLUTION_STATISTICS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_SQLDEPEND</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_JOURNAL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TYPE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_SITE_OBJECTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPPROP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_IND$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_ICOL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_OUTPUT</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TAB$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_EVALUATIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_FILTERINSTANCE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_AQERROR</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_LOG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_PRETTY</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_AQCALL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_TEMP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$SKIP_TRANSACTION</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_EXTENSION</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_FILTER</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_AJG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_DICTSTATE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_PRIORITY</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$APPLY_MILESTONE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_AGE_SPILL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_RESOLUTION</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_SNAPGROUP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_LOB</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_DICTIONARY$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.HELP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_TYPES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_OBJ$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TABSUBPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_PROPS$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_INDCOMPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_ATTRIBUTE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_OBJECT_PARMS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_RECOMMENDATIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_KOPM$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_RESTART_CKPT_TXINFO$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_PRIORITY_GROUP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_PROCESSED_LOG$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TABCOMPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPCAT</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_EXCEPTIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.AQ$DEF$_AQCALL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$PLSQL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_DDL</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.SQLPLUS_PRODUCT_PROFILE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_INDSUBPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_ERROR</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_COLUMN_GROUP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_DESTINATION</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$EVENTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TABPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_PUSHED_TRANSACTIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.OL$NODES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SESSION$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SESSION_ACTIONS$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_UID$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$APPLY_PROGRESS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNRC_DBNAME_UID_MAP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SESSION_EVOLVE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_PARTOBJ$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_WORKLOAD</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_SITES_NEW</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_PARAMETERS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_DEFAULTDEST</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_LOB$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_PROPAGATOR</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.AQ$_SCHEDULES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SPILL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_CLIQUE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_REFGROUPS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_KEY_COLUMNS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_SITES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.AQ$_QUEUES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_ROLLUP</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.AQ$_INTERNET_AGENTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_SUBCOLTYPE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_ATTRCOL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_PARMS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_CDEF$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPCATLOG</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_GT_TAB_INCLUDE$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.MVIEW_EXCEPTIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_RESOLUTION_METHOD</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_COL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_USER_AUTHORIZATIONS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_FILTER</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_TS$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_OBJECT_TYPES</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_ERROR$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.DEF$_CALLDEST</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_INDPART$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$PARAMETERS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$FLASHBACK_SCN</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_STATUS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_TEMPLATE_OBJECTS</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.REPCAT$_REPOBJECT</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_FILTERINSTANCE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGSTDBY$HISTORY</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.VIEW:SYSTEM.AQ$DEF$_AQERROR</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_CCOL$</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.MVIEW$_ADV_ELIGIBLE</node>
+            <node x="" y="">8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b.TABLE:SYSTEM.LOGMNR_OPQTYPE$</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.09428234103558779" x="3022.0" y="2875.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/SYSTEM.LOGMNR_SESSION$">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/SYSTEM.TABLE_NAME">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.TABLE_NAME">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/SYSTEM.USUARIOS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.DEMO_USERS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.EMP">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a7eb0303-36b5-48c1-9674-c8968b958c26/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.USUARIOS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/a7eb0303-36b5-48c1-9674-c8968b958c26">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a7eb0303-36b5-48c1-9674-c8968b958c26</OriginalElement>
+          <nodes>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_TAGS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_LINKS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_ROWS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_HISTORY</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_STATES</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_WEBPG_SECTION_HISTORY</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_NOTES</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_PRODUCT_INFO</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_ORDERS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.ROLES</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_ACL</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.USUARIOS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_FILES</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_ORDER_ITEMS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEPT</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.EMP</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_CUSTOMERS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.DEMO_USERS</node>
+            <node x="" y="">a7eb0303-36b5-48c1-9674-c8968b958c26.TABLE:IPARTEK.APEX$_WS_WEBPG_SECTIONS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.11928071928071927" x="2493.0" y="2304.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/afe47288/Entities/CatalogoVersion02/jpa/JPA/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/afe47288/Entities/CatalogoVersion02/jpa/JPA/PersistenceModel</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="299.0" y="280.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Embeddables</Category>
+            <Category>Properties</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.usuarios">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.usuarios</OriginalElement>
+          <nodes>
+            <node x="323.0" y="157.0">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.roles</node>
+            <node x="0.0" y="0.0">51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.usuarios</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.usuarios" target="51b9196f-b971-4f6a-a1f6-d5030d2197ee.TABLE:ipartek.dbo.roles">
+              <point x="0.0" y="0.0" />
+              <point x="425.0" y="58.5" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="249.0" y="64.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/51b9196f-b971-4f6a-a1f6-d5030d2197ee/ipartek.dbo.productos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/51b9196f-b971-4f6a-a1f6-d5030d2197ee/ipartek.dbo.usuarios">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/51b9196f-b971-4f6a-a1f6-d5030d2197ee/ipartek.dbo.roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.ROLES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+        <state relative-caret-position="1122">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/PruebaTipoEnityFacturas.java">
+    <entry file="file://$PROJECT_DIR$/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="53" column="56" lean-forward="true" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        <state relative-caret-position="382">
+          <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1030#1039#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>webapp:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPA</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CatalogoVersion02</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
