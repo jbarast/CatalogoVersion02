@@ -135,4 +135,25 @@ public class Factura {
         result = 31 * result + (cantidad != null ? cantidad.hashCode() : 0);
         return result;
     }
+
+    //TODO mover este metodo a un sitio mejor.
+    /**
+     * Metodo añadir un producto a una factura.
+     * @param producto
+     */
+    public void add(Producto producto){
+        productos.add(producto);
+        producto.getFacturas().add(this);
+    }
+
+    //TODO mover este metodo a un sitio mejor.
+    /**
+     * Metodo remover un producto de la factura.
+     * @param producto
+     */
+    public void remove(Producto producto){
+        productos.add(producto);
+        producto.getFacturas().remove(this);
+    }
+
 }

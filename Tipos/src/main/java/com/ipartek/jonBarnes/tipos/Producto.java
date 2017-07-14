@@ -176,4 +176,25 @@ public class Producto implements Serializable {
 		return true;
 	}
 
+
+	//TODO mover este metodo a un sitio mejor.
+	/**
+	 * Metodo añadir factura a un producto añadido.
+	 * @param factura
+	 */
+	public void add(Factura factura){
+		facturas.add(factura);
+		factura.getProductos().add(this);
+	}
+
+	//TODO mover este metodo a un sitio mejor.
+	/**
+	 * Metodo remover una factura al producto añadido.
+	 * @param factura
+	 */
+	public void remove(Factura factura){
+		facturas.add(factura);
+		factura.getProductos().remove(this);
+	}
+
 }
