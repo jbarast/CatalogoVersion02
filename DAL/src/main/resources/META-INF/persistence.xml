@@ -11,6 +11,7 @@
         <class>com.ipartek.jonBarnes.tipos.Usuario</class>
         <class>com.ipartek.jonBarnes.tipos.ROL</class>
         <class>com.ipartek.jonBarnes.tipos.Producto</class>
+        <class>com.ipartek.jonBarnes.tipos.Factura</class>
 
         <!-- Propiedades de la JPA. -->
         <properties>
@@ -42,6 +43,8 @@
         <class>com.ipartek.jonBarnes.tipos.Usuario</class>
         <class>com.ipartek.jonBarnes.tipos.ROL</class>
         <class>com.ipartek.jonBarnes.tipos.Producto</class>
+        <class>com.ipartek.jonBarnes.tipos.Factura</class>
+
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=ipartek;user=sa;password=Forma2017;"/>
             <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
