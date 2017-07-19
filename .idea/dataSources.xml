@@ -7,19 +7,5 @@
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
       <jdbc-url>jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=ipartek</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="@localhost" uuid="8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b">
-      <driver-ref>oracle</driver-ref>
-      <synchronize>true</synchronize>
-      <auto-commit>false</auto-commit>
-      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@localhost:1521:XE</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="Ipartek" uuid="a7eb0303-36b5-48c1-9674-c8968b958c26">
-      <driver-ref>oracle</driver-ref>
-      <synchronize>true</synchronize>
-      <auto-commit>false</auto-commit>
-      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@localhost:1521:XE</jdbc-url>
-    </data-source>
   </component>
 </project>
