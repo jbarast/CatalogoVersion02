@@ -24,7 +24,7 @@ public class Usuario implements Serializable {
 	@GeneratedValue
 	private long id;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	@JoinColumn(name = "id_rol", nullable = false)
 	private ROL idRoles;
 

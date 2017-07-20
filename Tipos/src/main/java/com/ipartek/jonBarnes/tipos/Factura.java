@@ -25,14 +25,14 @@ public class Factura {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
 
-    @ManyToMany(mappedBy ="facturas",cascade = CascadeType.PERSIST)
-    private List<Producto> productos;
+    @ManyToMany(targetEntity = Producto.class)
+    private List<Carrito> productos;
 
-    @Column(name = "cantidad")
-    private List<Integer> cantidad;
+    //@Column(name = "cantidad")
+    //private List<Integer> cantidad;
 
     @Column(name ="fecha")
     private Date date;
@@ -65,21 +65,21 @@ public class Factura {
         this.usuario = usuario;
     }
 
-    public List<Producto> getProductos() {
+    public List<Carrito> getProductos() {
         return productos;
     }
 
-    public void setProductos(List<Producto> productos) {
+    public void setProductos(List<Carrito> productos) {
         this.productos = productos;
     }
 
-    public List<Integer> getCantidad() {
+   /* public List<Integer> getCantidad() {
         return cantidad;
-    }
+    }*/
 
-    public void setCantidad(List<Integer> cantidad) {
+   /* public void setCantidad(List<Integer> cantidad) {
         this.cantidad = cantidad;
-    }
+    }*/
 
 
     public void setDate(Date date) {
@@ -100,16 +100,11 @@ public class Factura {
                 "id=" + id +
                 ", usuario=" + usuario +
                 ", productos=" + productos +
-                ", cantidad=" + cantidad +
+
                 ", fecha=" + date +
                 '}';
     }
 
-    /**
-     * Metodo equals().
-     * @param o
-     * @return
-     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -120,40 +115,19 @@ public class Factura {
         if (id != null ? !id.equals(factura.id) : factura.id != null) return false;
         if (usuario != null ? !usuario.equals(factura.usuario) : factura.usuario != null) return false;
         if (productos != null ? !productos.equals(factura.productos) : factura.productos != null) return false;
-        return cantidad != null ? cantidad.equals(factura.cantidad) : factura.cantidad == null;
+        return date != null ? date.equals(factura.date) : factura.date == null;
     }
 
-    /**
-     * Metodo hashCode().
-     * @return
-     */
     @Override
     public int hashCode() {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (usuario != null ? usuario.hashCode() : 0);
         result = 31 * result + (productos != null ? productos.hashCode() : 0);
-        result = 31 * result + (cantidad != null ? cantidad.hashCode() : 0);
+        result = 31 * result + (date != null ? date.hashCode() : 0);
         return result;
     }
 
-    //TODO mover este metodo a un sitio mejor.
-    /**
-     * Metodo añadir un producto a una factura.
-     * @param producto
-     */
-    public void add(Producto producto){
-        productos.add(producto);
-        producto.getFacturas().add(this);
-    }
 
-    //TODO mover este metodo a un sitio mejor.
-    /**
-     * Metodo remover un producto de la factura.
-     * @param producto
-     */
-    public void remove(Producto producto){
-        productos.add(producto);
-        producto.getFacturas().remove(this);
-    }
+
 
 }

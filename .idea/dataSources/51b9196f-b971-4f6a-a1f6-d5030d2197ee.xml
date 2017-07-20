@@ -24,176 +24,352 @@
     <database id="7" parent="1" name="LibroHibernate">
       <ObjectId>6</ObjectId>
     </database>
-    <schema id="8" parent="2" name="dbo">
+    <database id="8" parent="1" name="pruebas">
+      <ObjectId>7</ObjectId>
+    </database>
+    <schema id="9" parent="2" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2017-07-19.16:56:22.063</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-07-19.19:34:05.717</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="9" parent="2" name="guest">
+    <schema id="10" parent="2" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="10" parent="2" name="INFORMATION_SCHEMA">
+    <schema id="11" parent="2" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="11" parent="2" name="sys">
+    <schema id="12" parent="2" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <schema id="12" parent="2" name="db_owner">
+    <schema id="13" parent="2" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="13" parent="2" name="db_accessadmin">
+    <schema id="14" parent="2" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="14" parent="2" name="db_securityadmin">
+    <schema id="15" parent="2" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="15" parent="2" name="db_ddladmin">
+    <schema id="16" parent="2" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="16" parent="2" name="db_backupoperator">
+    <schema id="17" parent="2" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="17" parent="2" name="db_datareader">
+    <schema id="18" parent="2" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="18" parent="2" name="db_datawriter">
+    <schema id="19" parent="2" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="19" parent="2" name="db_denydatareader">
+    <schema id="20" parent="2" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="20" parent="2" name="db_denydatawriter">
+    <schema id="21" parent="2" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <table id="21" parent="8" name="hibernate_sequence">
+    <table id="22" parent="9" name="clases">
+      <ObjectId>1390627997</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.410</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.600</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="9" name="clases_profesores">
+      <ObjectId>1422628111</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.533</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.597</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="9" name="facturas">
+      <ObjectId>1582628681</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.283</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.453</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="9" name="facturas_productos">
+      <ObjectId>1614628795</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.327</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.450</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="9" name="hibernate_sequence">
       <ObjectId>1134627085</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.590</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:47:54.590</ModifiedTimestamp>
     </table>
-    <table id="22" parent="8" name="productos">
+    <table id="27" parent="9" name="productos">
       <ObjectId>1150627142</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.597</CreatedTimestamp>
-      <ModifiedTimestamp>2017-07-05.18:49:03.020</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.497</ModifiedTimestamp>
     </table>
-    <table id="23" parent="8" name="roles">
+    <table id="28" parent="9" name="productos_facturas">
+      <ObjectId>1630628852</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.330</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.497</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="9" name="profesores">
+      <ObjectId>1454628225</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.540</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.607</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="9" name="profesores_clases">
+      <ObjectId>1486628339</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.580</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.603</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="9" name="roles">
       <ObjectId>1182627256</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.597</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:49:03.023</ModifiedTimestamp>
     </table>
-    <table id="24" parent="8" name="sysdiagrams">
+    <table id="32" parent="9" name="sysdiagrams">
       <ObjectId>581577110</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:30.957</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:30.957</ModifiedTimestamp>
     </table>
-    <table id="25" parent="8" name="usuarios">
+    <table id="33" parent="9" name="usuarios">
       <ObjectId>1214627370</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.600</CreatedTimestamp>
-      <ModifiedTimestamp>2017-07-05.18:49:03.030</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.447</ModifiedTimestamp>
     </table>
-    <routine id="26" parent="8" name="fn_diagramobjects">
+    <routine id="34" parent="9" name="fn_diagramobjects">
       <ObjectId>725577623</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.043</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.043</ModifiedTimestamp>
       <RoutineKind>function</RoutineKind>
       <RoutineType>scalar-fun</RoutineType>
     </routine>
-    <routine id="27" parent="8" name="sp_alterdiagram">
+    <routine id="35" parent="9" name="sp_alterdiagram">
       <ObjectId>693577509</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.010</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.010</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="28" parent="8" name="sp_creatediagram">
+    <routine id="36" parent="9" name="sp_creatediagram">
       <ObjectId>661577395</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.007</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.007</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="29" parent="8" name="sp_dropdiagram">
+    <routine id="37" parent="9" name="sp_dropdiagram">
       <ObjectId>709577566</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.040</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.040</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="30" parent="8" name="sp_helpdiagramdefinition">
+    <routine id="38" parent="9" name="sp_helpdiagramdefinition">
       <ObjectId>645577338</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.003</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.003</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="31" parent="8" name="sp_helpdiagrams">
+    <routine id="39" parent="9" name="sp_helpdiagrams">
       <ObjectId>629577281</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="32" parent="8" name="sp_renamediagram">
+    <routine id="40" parent="9" name="sp_renamediagram">
       <ObjectId>677577452</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:31.007</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:31.007</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="33" parent="8" name="sp_upgraddiagrams">
+    <routine id="41" parent="9" name="sp_upgraddiagrams">
       <ObjectId>565577053</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:30.917</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:30.917</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <column id="34" parent="21" name="next_val">
+    <column id="42" parent="22" name="cid">
       <Position>1</Position>
-      <DataType>bigint|0</DataType>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="22" name="id">
+    <column id="43" parent="22" name="cname">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="44" parent="22" name="PK__clases__D837D05F32B49F64">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="22" name="PK__clases__D837D05F32B49F64">
+      <ObjectId>1406628054</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-07-19.19:07:50.530</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.530</ModifiedTimestamp>
+      <ColNames>cid</ColNames>
+      <UnderlyingIndexName>PK__clases__D837D05F32B49F64</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="23" name="Clase_cid">
+      <Position>1</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="23" name="teacherSet_tid">
+      <Position>2</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="48" parent="23" name="PK__clases_p__9F9FB82B1D013261">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Clase_cid
+teacherSet_tid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="23" name="PK__clases_p__9F9FB82B1D013261">
+      <ObjectId>1438628168</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-07-19.19:07:50.537</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.537</ModifiedTimestamp>
+      <ColNames>Clase_cid
+teacherSet_tid</ColNames>
+      <UnderlyingIndexName>PK__clases_p__9F9FB82B1D013261</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="50" parent="23" name="FKc4inj9fq969qy2byob1sr0xxb">
+      <ObjectId>1534628510</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.597</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.597</ModifiedTimestamp>
+      <ColNames>Clase_cid</ColNames>
+      <RefTableName>clases</RefTableName>
+      <RefKeyName>PK__clases__D837D05F32B49F64</RefKeyName>
+      <RefColNames>cid</RefColNames>
+    </foreign-key>
+    <foreign-key id="51" parent="23" name="FK8prwdwcbqx7uh8bqjil13uf44">
+      <ObjectId>1518628453</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.590</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.590</ModifiedTimestamp>
+      <ColNames>teacherSet_tid</ColNames>
+      <RefTableName>profesores</RefTableName>
+      <RefKeyName>PK__profesor__DC105B0F215EFE0A</RefKeyName>
+      <RefColNames>tid</RefColNames>
+    </foreign-key>
+    <column id="52" parent="24" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="22" name="descripcion">
+    <column id="53" parent="24" name="fecha">
       <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>datetime2|0</DataType>
     </column>
-    <column id="37" parent="22" name="nombre">
+    <column id="54" parent="24" name="id_usuario">
       <Position>3</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="22" name="precio">
-      <Position>4</Position>
-      <DataType>numeric(19,2)|0</DataType>
-    </column>
-    <column id="39" parent="22" name="Imagen">
-      <Position>5</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="40" parent="22" name="stock">
-      <Position>6</Position>
-      <DataType>int|0</DataType>
-    </column>
-    <index id="41" parent="22" name="PK__producto__3213E83F22629141">
+    <index id="55" parent="24" name="PK__facturas__3213E83FC51A8ED7">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="42" parent="22" name="UK_mlgw7js72hh2xtd4mvpdqfsbe">
+    <key id="56" parent="24" name="PK__facturas__3213E83FC51A8ED7">
+      <ObjectId>1598628738</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-07-19.19:33:56.287</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.287</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__facturas__3213E83FC51A8ED7</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="57" parent="24" name="FKqkcj0ifyqh8fjrurt5ndyjq3o">
+      <ObjectId>1646628909</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.443</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.443</ModifiedTimestamp>
+      <ColNames>id_usuario</ColNames>
+      <RefTableName>usuarios</RefTableName>
+      <RefKeyName>PK__usuarios__3213E83F9336DE4B</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="25" name="Factura_id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="25" name="productos_id">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="60" parent="25" name="FKjtsfhhbfubpvj6gry6slrcui9">
+      <ObjectId>1678629023</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.450</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.450</ModifiedTimestamp>
+      <ColNames>Factura_id</ColNames>
+      <RefTableName>facturas</RefTableName>
+      <RefKeyName>PK__facturas__3213E83FC51A8ED7</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="61" parent="25" name="FKnkcvy58jujefpkqiiccf0xam7">
+      <ObjectId>1662628966</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.447</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.447</ModifiedTimestamp>
+      <ColNames>productos_id</ColNames>
+      <RefTableName>productos</RefTableName>
+      <RefKeyName>PK__producto__3213E83F22629141</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="62" parent="26" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+    </column>
+    <column id="63" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="27" name="descripcion">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="65" parent="27" name="nombre">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="66" parent="27" name="precio">
+      <Position>4</Position>
+      <DataType>numeric(19,2)|0</DataType>
+    </column>
+    <column id="67" parent="27" name="Imagen">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="68" parent="27" name="stock">
+      <Position>6</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <index id="69" parent="27" name="PK__producto__3213E83F22629141">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="70" parent="27" name="UK_mlgw7js72hh2xtd4mvpdqfsbe">
       <Position>2</Position>
       <ColNames>nombre</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="43" parent="22" name="UKmlgw7js72hh2xtd4mvpdqfsbe">
+    <index id="71" parent="27" name="UKmlgw7js72hh2xtd4mvpdqfsbe">
       <Position>3</Position>
       <ColNames>nombre</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="44" parent="22" name="PK__producto__3213E83F22629141">
+    <key id="72" parent="27" name="PK__producto__3213E83F22629141">
       <ObjectId>1166627199</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-07-05.18:47:54.597</CreatedTimestamp>
@@ -202,52 +378,155 @@
       <UnderlyingIndexName>PK__producto__3213E83F22629141</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="45" parent="22" name="UK_mlgw7js72hh2xtd4mvpdqfsbe">
+    <key id="73" parent="27" name="UK_mlgw7js72hh2xtd4mvpdqfsbe">
       <ObjectId>1246627484</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.600</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:47:54.600</ModifiedTimestamp>
       <ColNames>nombre</ColNames>
       <UnderlyingIndexName>UK_mlgw7js72hh2xtd4mvpdqfsbe</UnderlyingIndexName>
     </key>
-    <key id="46" parent="22" name="UKmlgw7js72hh2xtd4mvpdqfsbe">
+    <key id="74" parent="27" name="UKmlgw7js72hh2xtd4mvpdqfsbe">
       <ObjectId>1310627712</ObjectId>
       <CreatedTimestamp>2017-07-05.18:49:03.017</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:49:03.017</ModifiedTimestamp>
       <ColNames>nombre</ColNames>
       <UnderlyingIndexName>UKmlgw7js72hh2xtd4mvpdqfsbe</UnderlyingIndexName>
     </key>
-    <column id="47" parent="23" name="id">
+    <column id="75" parent="28" name="Producto_id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="23" name="descripcion">
+    <column id="76" parent="28" name="facturas_id">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="77" parent="28" name="FKfak9s7ey8ate5h2t2cjh80yv9">
+      <ObjectId>1710629137</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.497</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.497</ModifiedTimestamp>
+      <ColNames>Producto_id</ColNames>
+      <RefTableName>productos</RefTableName>
+      <RefKeyName>PK__producto__3213E83F22629141</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="78" parent="28" name="FK5fdlhspm754bmudiko6jfoqds">
+      <ObjectId>1694629080</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:33:56.450</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:33:56.450</ModifiedTimestamp>
+      <ColNames>facturas_id</ColNames>
+      <RefTableName>facturas</RefTableName>
+      <RefKeyName>PK__facturas__3213E83FC51A8ED7</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="79" parent="29" name="tid">
+      <Position>1</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="29" name="subject">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="49" parent="23" name="rol">
+    <column id="81" parent="29" name="tname">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="82" parent="29" name="PK__profesor__DC105B0F215EFE0A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>tid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="83" parent="29" name="PK__profesor__DC105B0F215EFE0A">
+      <ObjectId>1470628282</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-07-19.19:07:50.580</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.580</ModifiedTimestamp>
+      <ColNames>tid</ColNames>
+      <UnderlyingIndexName>PK__profesor__DC105B0F215EFE0A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="84" parent="30" name="Teacher_tid">
+      <Position>1</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="30" name="clasSet_cid">
+      <Position>2</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="86" parent="30" name="PK__profesor__4FF35CD907047B08">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Teacher_tid
+clasSet_cid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="30" name="PK__profesor__4FF35CD907047B08">
+      <ObjectId>1502628396</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-07-19.19:07:50.583</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.583</ModifiedTimestamp>
+      <ColNames>Teacher_tid
+clasSet_cid</ColNames>
+      <UnderlyingIndexName>PK__profesor__4FF35CD907047B08</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="88" parent="30" name="FK3j862u2vd60nbufrlqslurcrs">
+      <ObjectId>1566628624</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.603</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.603</ModifiedTimestamp>
+      <ColNames>Teacher_tid</ColNames>
+      <RefTableName>profesores</RefTableName>
+      <RefKeyName>PK__profesor__DC105B0F215EFE0A</RefKeyName>
+      <RefColNames>tid</RefColNames>
+    </foreign-key>
+    <foreign-key id="89" parent="30" name="FKpd5c78chxafk3gvsbc7l00axe">
+      <ObjectId>1550628567</ObjectId>
+      <CreatedTimestamp>2017-07-19.19:07:50.600</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.19:07:50.600</ModifiedTimestamp>
+      <ColNames>clasSet_cid</ColNames>
+      <RefTableName>clases</RefTableName>
+      <RefKeyName>PK__clases__D837D05F32B49F64</RefKeyName>
+      <RefColNames>cid</RefColNames>
+    </foreign-key>
+    <column id="90" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="91" parent="31" name="descripcion">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="92" parent="31" name="rol">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="50" parent="23" name="PK__roles__3213E83F2B6E2FBA">
+    <index id="93" parent="31" name="PK__roles__3213E83F2B6E2FBA">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="51" parent="23" name="UK_g00thobnv3twutok8x6furkx1">
+    <index id="94" parent="31" name="UK_g00thobnv3twutok8x6furkx1">
       <Position>2</Position>
       <ColNames>rol</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="52" parent="23" name="UKg00thobnv3twutok8x6furkx1">
+    <index id="95" parent="31" name="UKg00thobnv3twutok8x6furkx1">
       <Position>3</Position>
       <ColNames>rol</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="53" parent="23" name="PK__roles__3213E83F2B6E2FBA">
+    <key id="96" parent="31" name="PK__roles__3213E83F2B6E2FBA">
       <ObjectId>1198627313</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-07-05.18:47:54.600</CreatedTimestamp>
@@ -256,58 +535,58 @@
       <UnderlyingIndexName>PK__roles__3213E83F2B6E2FBA</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="54" parent="23" name="UK_g00thobnv3twutok8x6furkx1">
+    <key id="97" parent="31" name="UK_g00thobnv3twutok8x6furkx1">
       <ObjectId>1262627541</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.603</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:47:54.603</ModifiedTimestamp>
       <ColNames>rol</ColNames>
       <UnderlyingIndexName>UK_g00thobnv3twutok8x6furkx1</UnderlyingIndexName>
     </key>
-    <key id="55" parent="23" name="UKg00thobnv3twutok8x6furkx1">
+    <key id="98" parent="31" name="UKg00thobnv3twutok8x6furkx1">
       <ObjectId>1326627769</ObjectId>
       <CreatedTimestamp>2017-07-05.18:49:03.020</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:49:03.020</ModifiedTimestamp>
       <ColNames>rol</ColNames>
       <UnderlyingIndexName>UKg00thobnv3twutok8x6furkx1</UnderlyingIndexName>
     </key>
-    <column id="56" parent="24" name="name">
+    <column id="99" parent="32" name="name">
       <Position>1</Position>
       <DataType>sysname|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="24" name="principal_id">
+    <column id="100" parent="32" name="principal_id">
       <Position>2</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="24" name="diagram_id">
+    <column id="101" parent="32" name="diagram_id">
       <Position>3</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="59" parent="24" name="version">
+    <column id="102" parent="32" name="version">
       <Position>4</Position>
       <DataType>int|0</DataType>
     </column>
-    <column id="60" parent="24" name="definition">
+    <column id="103" parent="32" name="definition">
       <Position>5</Position>
       <DataType>varbinary|0</DataType>
     </column>
-    <index id="61" parent="24" name="PK__sysdiagr__C2B05B615249DEF0">
+    <index id="104" parent="32" name="PK__sysdiagr__C2B05B615249DEF0">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>diagram_id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="62" parent="24" name="UK_principal_name">
+    <index id="105" parent="32" name="UK_principal_name">
       <Position>2</Position>
       <ColNames>principal_id
 name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="63" parent="24" name="PK__sysdiagr__C2B05B615249DEF0">
+    <key id="106" parent="32" name="PK__sysdiagr__C2B05B615249DEF0">
       <ObjectId>597577167</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-07-04.19:07:30.987</CreatedTimestamp>
@@ -316,7 +595,7 @@ name</ColNames>
       <UnderlyingIndexName>PK__sysdiagr__C2B05B615249DEF0</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="64" parent="24" name="UK_principal_name">
+    <key id="107" parent="32" name="UK_principal_name">
       <ObjectId>613577224</ObjectId>
       <CreatedTimestamp>2017-07-04.19:07:30.987</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-04.19:07:30.987</ModifiedTimestamp>
@@ -324,46 +603,46 @@ name</ColNames>
 name</ColNames>
       <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
     </key>
-    <column id="65" parent="25" name="id">
+    <column id="108" parent="33" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="25" name="nombre_completo">
+    <column id="109" parent="33" name="nombre_completo">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="67" parent="25" name="password">
+    <column id="110" parent="33" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="68" parent="25" name="username">
+    <column id="111" parent="33" name="username">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="69" parent="25" name="id_rol">
+    <column id="112" parent="33" name="id_rol">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="70" parent="25" name="PK__usuarios__3213E83F9336DE4B">
+    <index id="113" parent="33" name="PK__usuarios__3213E83F9336DE4B">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <index id="71" parent="25" name="UK_m2dvbwfge291euvmk6vkkocao">
+    <index id="114" parent="33" name="UK_m2dvbwfge291euvmk6vkkocao">
       <Position>2</Position>
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="72" parent="25" name="UKm2dvbwfge291euvmk6vkkocao">
+    <index id="115" parent="33" name="UKm2dvbwfge291euvmk6vkkocao">
       <Position>3</Position>
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="73" parent="25" name="PK__usuarios__3213E83F9336DE4B">
+    <key id="116" parent="33" name="PK__usuarios__3213E83F9336DE4B">
       <ObjectId>1230627427</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-07-05.18:47:54.600</CreatedTimestamp>
@@ -372,21 +651,21 @@ name</ColNames>
       <UnderlyingIndexName>PK__usuarios__3213E83F9336DE4B</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="74" parent="25" name="UK_m2dvbwfge291euvmk6vkkocao">
+    <key id="117" parent="33" name="UK_m2dvbwfge291euvmk6vkkocao">
       <ObjectId>1278627598</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.603</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:47:54.603</ModifiedTimestamp>
       <ColNames>username</ColNames>
       <UnderlyingIndexName>UK_m2dvbwfge291euvmk6vkkocao</UnderlyingIndexName>
     </key>
-    <key id="75" parent="25" name="UKm2dvbwfge291euvmk6vkkocao">
+    <key id="118" parent="33" name="UKm2dvbwfge291euvmk6vkkocao">
       <ObjectId>1342627826</ObjectId>
       <CreatedTimestamp>2017-07-05.18:49:03.027</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:49:03.027</ModifiedTimestamp>
       <ColNames>username</ColNames>
       <UnderlyingIndexName>UKm2dvbwfge291euvmk6vkkocao</UnderlyingIndexName>
     </key>
-    <foreign-key id="76" parent="25" name="FK3kl77pehgupicftwfreqnjkll">
+    <foreign-key id="119" parent="33" name="FK3kl77pehgupicftwfreqnjkll">
       <ObjectId>1294627655</ObjectId>
       <CreatedTimestamp>2017-07-05.18:47:54.607</CreatedTimestamp>
       <ModifiedTimestamp>2017-07-05.18:47:54.607</ModifiedTimestamp>
@@ -395,59 +674,59 @@ name</ColNames>
       <RefKeyName>PK__roles__3213E83F2B6E2FBA</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <argument id="77" parent="26">
+    <argument id="120" parent="34">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>int|0</DataType>
     </argument>
-    <argument id="78" parent="27" name="@diagramname">
+    <argument id="121" parent="35" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="79" parent="27" name="@owner_id">
+    <argument id="122" parent="35" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="80" parent="27" name="@version">
+    <argument id="123" parent="35" name="@version">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="81" parent="27" name="@definition">
+    <argument id="124" parent="35" name="@definition">
       <DataType>varbinary|0</DataType>
     </argument>
-    <argument id="82" parent="28" name="@diagramname">
+    <argument id="125" parent="36" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="83" parent="28" name="@owner_id">
+    <argument id="126" parent="36" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="84" parent="28" name="@version">
+    <argument id="127" parent="36" name="@version">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="85" parent="28" name="@definition">
+    <argument id="128" parent="36" name="@definition">
       <DataType>varbinary|0</DataType>
     </argument>
-    <argument id="86" parent="29" name="@diagramname">
+    <argument id="129" parent="37" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="87" parent="29" name="@owner_id">
+    <argument id="130" parent="37" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="88" parent="30" name="@diagramname">
+    <argument id="131" parent="38" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="89" parent="30" name="@owner_id">
+    <argument id="132" parent="38" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="90" parent="31" name="@diagramname">
+    <argument id="133" parent="39" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="91" parent="31" name="@owner_id">
+    <argument id="134" parent="39" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="92" parent="32" name="@diagramname">
+    <argument id="135" parent="40" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="93" parent="32" name="@owner_id">
+    <argument id="136" parent="40" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="94" parent="32" name="@new_diagramname">
+    <argument id="137" parent="40" name="@new_diagramname">
       <DataType>sysname|0</DataType>
     </argument>
   </database-model>

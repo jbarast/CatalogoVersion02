@@ -41,8 +41,7 @@ public class Producto implements Serializable {
 	@Column(name = "Imagen")
 	private String rutaImagen;
 
-	@ManyToMany(cascade = CascadeType.PERSIST)
-	@JoinTable(name="productosFacturas", joinColumns = @JoinColumn(name = "factura_id"),inverseJoinColumns = @JoinColumn(name="producto_id"))
+	@ManyToMany(targetEntity = Factura.class)
 	private List<Factura> facturas = new ArrayList<Factura>();
 
 	// Constructores.
@@ -177,24 +176,6 @@ public class Producto implements Serializable {
 	}
 
 
-	//TODO mover este metodo a un sitio mejor.
-	/**
-	 * Metodo añadir factura a un producto añadido.
-	 * @param factura
-	 */
-	public void add(Factura factura){
-		facturas.add(factura);
-		factura.getProductos().add(this);
-	}
 
-	//TODO mover este metodo a un sitio mejor.
-	/**
-	 * Metodo remover una factura al producto añadido.
-	 * @param factura
-	 */
-	public void remove(Factura factura){
-		facturas.add(factura);
-		factura.getProductos().remove(this);
-	}
 
 }
