@@ -43,6 +43,15 @@ public class Factura {
     public Factura() {
     }
 
+    //Constructor minimo.
+
+    public Factura(Usuario usuario, List<Carrito> productos, Date date) {
+        this.usuario = usuario;
+        this.productos = productos;
+        this.date = date;
+    }
+
+
     //getters y setters.
 
     public Long getId() {

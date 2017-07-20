@@ -29,6 +29,5 @@ public interface FacturaInterfaceDAO {
     // Buscar por id.
     public Factura findByID(Long id);
 
-    // Buscar por factura.
-    public Factura finByRol(final String factura);
+
 }
