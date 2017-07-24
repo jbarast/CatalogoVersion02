@@ -98,4 +98,14 @@ public class ROLDAO implements ROLInterfaceDAO {
 		return (ROL) query.getSingleResult();
 	}
 
+
+
+	/**
+	 * Metodo para cerrar la conexion.
+	 */
+	public  void cerrarConexion(){
+		manager.close();
+		emf.close();
+	}
+
 }

@@ -10,8 +10,8 @@
 
 
 
-<%--Cargamos la cabecera --%>
-<%@ include file="includes/cabecera.jsp" %>
+<%--cabecera --%>
+<%@ include file="includes/cabecera.jsp"%>
 
 <%--Para el encoding. --%>
 <%@ page contentType="text/html; charset=UTF-8" %>

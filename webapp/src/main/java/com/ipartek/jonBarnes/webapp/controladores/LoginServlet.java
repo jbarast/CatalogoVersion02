@@ -32,6 +32,7 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		// A partir de aqui no borrarlo.
 		doPost(request, response);
 	}
 
@@ -57,18 +58,32 @@ public class LoginServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 		String opcion = request.getParameter("opcion");
 
+		// System.out.println de comprobaciones.
+		System.out.println("Opcion= " + opcion);
+
 		// Con estos datos creo un usuario.
 		Usuario usuarioLogin = new Usuario();
 		usuarioLogin.setUsername(username);
 		usuarioLogin.setPassword(pass);
 
+		// Haciendo pruebas.
+		// Codigo seguramente no tan bueno.
+
 		// Booleans.
-		boolean sinParametros = usuarioLogin.getUsername() == null;
+		boolean sinParametros = usuarioLogin.getUsername() == null && !("logout".equals(opcion));
+		boolean quiereSalir = "logout".equals(opcion);
 		try {
 
 			// Miramos que hayan metido un dato
 			if (sinParametros) {
+				System.out.println("Ruta a la cual se dirige = " + ConstantesGlobales.RUTA_LOGIN);
 				request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
+
+			} else if (quiereSalir) {
+				// Finalizamos la session.
+				session.invalidate();
+				request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
+
 			} else {
 				// Validamos el usuario.
 				// Prueba para saber que valida bien.
