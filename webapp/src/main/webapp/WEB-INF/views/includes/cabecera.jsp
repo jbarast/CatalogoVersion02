@@ -51,7 +51,7 @@
 			<a class="btn btn-default" href="listaproductos" role="button">Vista usuario</a>
 			<a class="btn btn-default" href="carritocrud" role="button">Carrito</a>
 			
-			<a class="btn btn-default" href="listafacturas" role="button">Lista facturas</a>
+
 			
 			<a class="btn btn-default" href="login?opcion=logout" role="button">Logout</a>
 	</nav>

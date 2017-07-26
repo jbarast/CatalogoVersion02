@@ -13,9 +13,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CatalogoVersion02" target="1.5" />
-      <module name="DAL" target="1.5" />
+      <module name="DAL" target="1.7" />
       <module name="Tipos" target="1.7" />
-      <module name="webapp" target="1.5" />
+      <module name="webapp" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

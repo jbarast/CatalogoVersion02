@@ -72,23 +72,18 @@ public class LoginServlet extends HttpServlet {
 		// Codigo seguramente no tan bueno.
 
 		// Booleans.
-		boolean sinParametros = usuarioLogin.getUsername() == null && !("logout".equals(opcion));
+		boolean sinParametros = usuarioLogin.getUsername() == null;
 		boolean quiereSalir = "logout".equals(opcion);
 		try {
 
 			// Miramos que hayan metido un dato
 			if (sinParametros) {
-				System.out.println(getServletContext().getRealPath("/"));
-				System.out.println(getServletContext().getContextPath());
-				System.out.println(ConstantesGlobales.RUTA_LOGIN);
 
+				System.out.println("Sin parametros");
 				request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
-				return;
 
-			} else if (quiereSalir) {
-				// Finalizamos la session.
-				session.invalidate();
-				request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
+
+
 
 			} else {
 				// Validamos el usuario.
@@ -103,7 +98,7 @@ public class LoginServlet extends HttpServlet {
 					session.setAttribute("usuario", usuarioAmeter);
 
 					// rediccionamiento.
-					response.sendRedirect("/productocrud");
+					response.sendRedirect("/productoscrud");
 				} else {
 					System.out.println("Usuario no valido, Prueba otra vez.");
 
@@ -111,7 +106,7 @@ public class LoginServlet extends HttpServlet {
 
 					request.setAttribute("usuario", usuarioLogin);
 					request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
-					return;
+
 
 				}
 
