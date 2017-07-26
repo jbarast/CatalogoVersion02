@@ -1,0 +1,13 @@
+com\ipartek\jonBarnes\DAL\FacturaDAO.class
+com\ipartek\jonBarnes\DAL\ROLDAO.class
+com\ipartek\jonBarnes\DAL\pruebas\UsuarioTest.class
+com\ipartek\jonBarnes\DAL\pruebas\ProductoTest.class
+com\ipartek\jonBarnes\DAL\UsuarioDAO.class
+com\ipartek\jonBarnes\DAL\interfaces\ProductoInterfaceDAO.class
+com\ipartek\jonBarnes\DAL\interfaces\FacturaInterfaceDAO.class
+com\ipartek\jonBarnes\DAL\ProductoDAO.class
+com\ipartek\jonBarnes\DAL\pruebas\FacturaPruebas.class
+com\ipartek\jonBarnes\DAL\pruebas\ProbandoRelacionFacturaProducto.class
+com\ipartek\jonBarnes\DAL\interfaces\ROLInterfaceDAO.class
+com\ipartek\jonBarnes\DAL\interfaces\UsuarioInterfaceDAO.class
+com\ipartek\jonBarnes\DAL\pruebas\ROLTest.class

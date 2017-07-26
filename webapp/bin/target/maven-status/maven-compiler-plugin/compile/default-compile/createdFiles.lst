@@ -1,0 +1,9 @@
+com\ipartek\jonBarnes\webapp\controladores\ProductosFormServlet.class
+com\ipartek\jonBarnes\webapp\controladores\ListaProductosFormServlet.class
+com\ipartek\jonBarnes\webapp\controladores\UsuarioCRUD.class
+com\ipartek\jonBarnes\webapp\variablesglobales\ConstantesGlobales.class
+com\ipartek\jonBarnes\webapp\controladores\CarritoCRUDServlet.class
+com\ipartek\jonBarnes\webapp\controladores\ProductosCRUDServlet.class
+com\ipartek\jonBarnes\webapp\controladores\LoginServlet.class
+com\ipartek\jonBarnes\webapp\controladores\UsuarioFormServlet.class
+com\ipartek\jonBarnes\webapp\controladores\ListaProductosServlet.class

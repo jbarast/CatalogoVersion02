@@ -103,7 +103,7 @@ public class LoginServlet extends HttpServlet {
 					session.setAttribute("usuario", usuarioAmeter);
 
 					// rediccionamiento.
-					response.sendRedirect("/productocrud");
+					response.sendRedirect("/productoscrud");
 				} else {
 					System.out.println("Usuario no valido, Prueba otra vez.");
 

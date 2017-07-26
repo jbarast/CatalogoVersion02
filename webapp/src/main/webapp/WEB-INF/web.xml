@@ -7,6 +7,33 @@
 
 
   <display-name>Archetype Created Web Application</display-name>
+
+	<!--Filtros-->
+	<filter>
+		<description>
+		</description>
+		<display-name>FiltroSesiones</display-name>
+		<filter-name>FiltroSesiones</filter-name>
+		<filter-class>com.ipartek.jonBarnes.webapp.filters.FiltroSesiones</filter-class>
+	</filter>
+	<filter>
+		<description>
+		</description>
+		<display-name>EncodingFilter</display-name>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.ipartek.jonBarnes.webapp.filters.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FiltroSesiones</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
   
   <servlet>
   	<servlet-name>login</servlet-name>
