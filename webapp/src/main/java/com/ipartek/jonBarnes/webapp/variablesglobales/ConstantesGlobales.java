@@ -26,7 +26,8 @@ public class ConstantesGlobales {
 
 	public static final String RUTA_LOGIN = RUTA + "login.jsp";
 	public static final String RUTA_SERVLET_LOGIN = "/login";
-	public static final String RUTA_LOGIN02 = RUTA + "login.jsp";
+
+
 
 	public static final int TIEMPO_INACTIVIDAD = 30 * 60;
 

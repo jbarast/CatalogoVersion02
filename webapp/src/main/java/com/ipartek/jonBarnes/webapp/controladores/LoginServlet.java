@@ -2,17 +2,16 @@
 
 package com.ipartek.jonBarnes.webapp.controladores;
 
-import java.io.IOException;
+import com.ipartek.jonBarnes.DAL.UsuarioDAO;
+import com.ipartek.jonBarnes.tipos.Usuario;
+import com.ipartek.jonBarnes.webapp.variablesglobales.ConstantesGlobales;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import com.ipartek.jonBarnes.DAL.UsuarioDAO;
-import com.ipartek.jonBarnes.tipos.Usuario;
-import com.ipartek.jonBarnes.webapp.variablesglobales.ConstantesGlobales;
+import java.io.IOException;
 
 /**
  * Servlet para la vista login.
@@ -46,6 +45,9 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
 			IOException {
 
+		// Leemos datos de la session.
+		HttpServletRequest req = (HttpServletRequest) request;
+		HttpServletResponse res = (HttpServletResponse) response;
 		// Session.
 		HttpSession session = request.getSession();
 		session.setMaxInactiveInterval(ConstantesGlobales.TIEMPO_INACTIVIDAD);
@@ -76,8 +78,12 @@ public class LoginServlet extends HttpServlet {
 
 			// Miramos que hayan metido un dato
 			if (sinParametros) {
-				System.out.println("Ruta a la cual se dirige = " + ConstantesGlobales.RUTA_LOGIN);
+				System.out.println(getServletContext().getRealPath("/"));
+				System.out.println(getServletContext().getContextPath());
+				System.out.println(ConstantesGlobales.RUTA_LOGIN);
+
 				request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
+				return;
 
 			} else if (quiereSalir) {
 				// Finalizamos la session.
@@ -105,6 +111,7 @@ public class LoginServlet extends HttpServlet {
 
 					request.setAttribute("usuario", usuarioLogin);
 					request.getRequestDispatcher(ConstantesGlobales.RUTA_LOGIN).forward(request, response);
+					return;
 
 				}
 

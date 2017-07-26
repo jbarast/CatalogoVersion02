@@ -10,6 +10,26 @@
         </datasource-mapping>
       </configuration>
     </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/bin/webapp/target/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/bin/webapp/target/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/bin/webapp/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/bin/webapp/src/main/webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -53,5 +73,6 @@
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-api:1.0-alpha-15" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:1.2-alpha-6" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-io:1.0-alpha-1" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
   </component>
 </module>

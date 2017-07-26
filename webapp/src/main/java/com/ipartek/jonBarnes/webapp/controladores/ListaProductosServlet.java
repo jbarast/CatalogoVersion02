@@ -60,6 +60,10 @@ public class ListaProductosServlet extends HttpServlet {
 		String op = request.getParameter("op");
 		String id = request.getParameter("id");
 
+		// Informacion.
+		System.out.println("La ruta en la que estoy: " + getServletContext().getContextPath());
+		System.out.println("El header : " + request.getHeader("referer"));
+
 		if (op == null) {
 
 			// Sacamos la lista de productos.

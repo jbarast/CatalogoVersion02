@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250c9a3d-69ee-487d-ae61-3de8196d5d0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DAL/src/test/java/com/ipartek/jonBarnes/DAL/ROLDAOTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAL/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tipos/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/.classpath" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ROLDAO.java" afterPath="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ROLDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tipos/src/test/com/ipartek/jonBarnes/tipos/CarritoTest.java" afterPath="$PROJECT_DIR$/Tipos/src/test/com/ipartek/jonBarnes/tipos/CarritoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CatalogoVersion02.iml" afterPath="$PROJECT_DIR$/CatalogoVersion02.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosServlet.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/variablesglobales/ConstantesGlobales.java" afterPath="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/variablesglobales/ConstantesGlobales.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/login.jsp" afterPath="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/webapp/target/" />
     <ignored path="$PROJECT_DIR$/DAL/target/" />
@@ -57,24 +64,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ROLDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ROLDAO.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="107" column="20" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+            <state relative-caret-position="238">
+              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ROLDAOTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DAL/src/test/java/com/ipartek/jonBarnes/DAL/ROLDAOTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +82,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -99,6 +95,7 @@
       <find>Producto</find>
       <find>tostrin</find>
       <find>fact</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,13 +124,10 @@
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosFormServlet.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductos.jsp" />
         <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/listaproductosform.jsp" />
-        <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosServlet.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/DAL/src/main/resources/META-INF/persistenciaSQLServer.xml" />
         <option value="$PROJECT_DIR$/DAL/pom.xml" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/ROLTest.java" />
-        <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/pruebas/UsuarioTest.java" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ProductoDAO.java" />
         <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ListaProductosFormServlet.java" />
@@ -162,6 +156,15 @@
         <option value="$PROJECT_DIR$/Tipos/src/test/com/ipartek/jonBarnes/tipos/CarritoTest.java" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ROLDAO.java" />
         <option value="$PROJECT_DIR$/DAL/src/test/java/com/ipartek/jonBarnes/DAL/ROLDAOTest.java" />
+        <option value="$PROJECT_DIR$/bin/webapp/target/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/bin/webapp/target/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/variablesglobales/ConstantesGlobales.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/includes/login.jsp" />
       </list>
     </option>
   </component>
@@ -220,7 +223,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -234,22 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
-              <item name="DAL" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
-              <item name="DAL" type="616d4139:PackageViewModuleNode" />
-              <item name="com.ipartek.jonBarnes.DAL" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,13 +247,58 @@
             <path>
               <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
               <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
-              <item name="Tipos" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
               <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
-              <item name="Tipos" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CatalogoVersion02" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CatalogoVersion02" type="b2602c69:ProjectViewProjectNode" />
@@ -276,9 +308,62 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Tests">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tipos" type="cbb8eebc:String" user="Tipos" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tipos" type="cbb8eebc:String" user="Tipos" />
+              <item name="Tipos" type="cbb8eebc:String" user="Tipos" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tipos" type="cbb8eebc:String" user="Tipos" />
+              <item name="Tipos" type="cbb8eebc:String" user="Tipos" />
+              <item name="src/test" type="cbb8eebc:String" user="src/test" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tipos" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webapp" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webapp" type="616d4139:PackageViewModuleNode" />
+              <item name="com.ipartek.jonBarnes.webapp" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webapp" type="616d4139:PackageViewModuleNode" />
+              <item name="com.ipartek.jonBarnes.webapp" type="1f31426a:PackageElementNode" />
+              <item name="controladores" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="CatalogoVersion02" type="58d84e3e:PackageViewProjectNode" />
+              <item name="webapp" type="616d4139:PackageViewModuleNode" />
+              <item name="com.ipartek.jonBarnes.webapp" type="1f31426a:PackageElementNode" />
+              <item name="variablesglobales" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,12 +371,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;SQL Server (Microsoft)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.6218391" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellij/POJOS" />
     <property name="JPA.DatabaseSchemaImportDialog" value="51b9196f-b971-4f6a-a1f6-d5030d2197ee" />
-    <property name="SearchEverywhereHistoryKey" value="rolt&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/ROLTest.java&#10;fa&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;facturat&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/FacturaTest.java&#10;fact&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;carrit&#9;PSI&#9;JAVA://com.ipartek.jonBarnes.tipos.Carrito&#10;usuariotes&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/UsuarioTest.java&#10;productotest&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/ProductoTest.java&#10;pro&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java&#10;usuario&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java&#10;rol&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ROL.java&#10;usuar&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java&#10;per&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/DAL/src/main/resources/META-INF/persistence.xml&#10;usuariodao&#9;PSI&#9;JAVA://com.ipartek.jonBarnes.DAL.UsuarioDAO&#10;usuariocrud&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/UsuarioCRUD.java&#10;Fac&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;producto&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java&#10;Usuario&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java" />
+    <property name="SearchEverywhereHistoryKey" value="Login&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/bin/webapp/target/webapp/WEB-INF/views/login.jsp&#10;login&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java&#10;web.xml&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/bin/src/main/webapp/WEB-INF/web.xml&#10;web&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/src/main/webapp/WEB-INF/web.xml&#10;usuariodao&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java&#10;loginSEr&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java&#10;login.jsp&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/bin/webapp/target/webapp/WEB-INF/views/login.jsp&#10;rolt&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/ROLTest.java&#10;fa&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;facturat&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/FacturaTest.java&#10;fact&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;carrit&#9;PSI&#9;JAVA://com.ipartek.jonBarnes.tipos.Carrito&#10;usuariotes&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/UsuarioTest.java&#10;productotest&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/test/com/ipartek/jonBarnes/tipos/ProductoTest.java&#10;pro&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java&#10;usuario&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java&#10;rol&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/ROL.java&#10;usuar&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java&#10;per&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/DAL/src/main/resources/META-INF/persistence.xml&#10;usuariocrud&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/UsuarioCRUD.java&#10;Fac&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Factura.java&#10;producto&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Producto.java&#10;Usuario&#9;FILE&#9;file://C:/JAVA/workspace/CatalogoVersion02/Tipos/src/main/java/com/ipartek/jonBarnes/tipos/Usuario.java" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/DAL/src/test/java" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
@@ -300,14 +385,17 @@
       <recent name="com.ipartek.jonBarnes.DAL" />
       <recent name="com.ipartek.jonBarnes.tipos" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JAVA\workspace\CatalogoVersion02\webapp\src\main\webapp\WEB-INF\views" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.ipartek.jonBarnes" />
       <recent name="" />
       <recent name="samples.ejb" />
       <recent name="com.microsoft.pruebas" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JAVA\workspace\CatalogoVersion02\webapp\src\main\webapp\WEB-INF\views" />
@@ -803,6 +891,7 @@
       <workItem from="1500484725223" duration="2484000" />
       <workItem from="1500555552066" duration="14829000" />
       <workItem from="1500641758087" duration="3516000" />
+      <workItem from="1501073966396" duration="4357000" />
     </task>
     <task id="LOCAL-00001" summary="Relacion faturas productos, en pricipio hecha.&#10;Falta:&#10;--Mirar getters y setters.&#10;--Mirar donde poner los metodos add y remove.&#10;--Mirar relacion @OneToMany Usuario facturas @ManyToOne.&#10;&#10;@jbarast">
       <created>1500050368648</created>
@@ -868,7 +957,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82959000" />
+    <option name="totallyTimeSpent" value="87316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -881,7 +970,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="3" side_tool="true" content_ui="tabs" />
@@ -894,18 +982,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62828946" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3569079" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18078668" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31089258" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5097561" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -914,9 +1002,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -943,14 +1031,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62828946" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3569079" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5065789" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18078668" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31089258" sideWeight="0.46153846" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5097561" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1013,46 +1101,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.TABLE_NAME" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/afe47288/8b54f9a3-b6bc-4caa-ab9d-bcbf11341e8b/SYSTEM.USUARIOS" />
-    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.DEMO_USERS" />
-    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.EMP" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a7eb0303-36b5-48c1-9674-c8968b958c26/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/afe47288/a7eb0303-36b5-48c1-9674-c8968b958c26/IPARTEK.USUARIOS" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/schema/Generate POJOs.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/a7eb0303-36b5-48c1-9674-c8968b958c26">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1213,13 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/interfaces/ROLInterfaceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1248,14 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1037">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/interfaces/FacturaInterfaceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12">
@@ -1281,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="84" column="86" lean-forward="false" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,7 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="125" column="73" lean-forward="false" selection-start-line="124" selection-start-column="15" selection-end-line="125" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,9 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="88" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="19" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1337,7 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="111" column="0" lean-forward="true" selection-start-line="107" selection-start-column="15" selection-end-line="113" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,9 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="250" column="19" lean-forward="false" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1355,9 +1377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,9 +1384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="54" column="86" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,15 +1399,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/ROLDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="1649">
           <caret line="107" column="20" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
           <folding />
         </state>
@@ -1402,8 +1415,108 @@
         <state relative-caret-position="169">
           <caret line="43" column="56" lean-forward="false" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/productoscrud.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/ProductosCRUDServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/loginCopia.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-860">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/webapp/target/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/bin/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/com/ipartek/jonBarnes/DAL/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="143" column="13" lean-forward="true" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/controladores/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="84" column="72" lean-forward="false" selection-start-line="84" selection-start-column="72" selection-end-line="84" selection-end-column="72" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/webapp/target/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/java/com/ipartek/jonBarnes/webapp/variablesglobales/ConstantesGlobales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,7 +1579,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1490,7 +1602,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.6218391" />
               </list>
             </option>
           </splitter-proportions>

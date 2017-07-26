@@ -1,45 +1,18 @@
-<%--login.jsp --%>
-
 <%--
-	Pagina de login de la aplicacion.
-	author: jon Barnes
-	version: 24/05/2017
+  Created by IntelliJ IDEA.
+  User: JAVA
+  Date: 26/07/2017
+  Time: 15:59
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
 
+  <H1>AHora si vas...</H1>
 
- --%>
-
-
-
-<%--cabecera --%>
-<%@ include file="includes/cabecera.jsp"%>
-
-<%--Para el encoding. --%>
-<%@ page contentType="text/html; charset=UTF-8" %>
-
-	<h2>Login</h2>
-	
-	<%--Cargamos la clase usuario. --%>
-	<jsp:useBean id="usuario" scope="request"
-		class="com.ipartek.jonBarnes.tipos.Usuario" />
-		
-		
-	<%--El formulario. --%>
-	
-	<form class="form-group" saction="login" method="post">
-		<fieldset>
-			<label for="nombre">Nombre</label> <input id="nombre" name="nombre"
-			  required="required" minlength="4"  />
-		</fieldset>
-		<fieldset>
-			<label for="pass">Contraseña</label> <input type="password" id="pass"
-				name="pass" />
-		</fieldset>
-		<fieldset>
-			<input type="submit" value="Login" />
-			<!-- <p class="errores">${usuario.errores}</p>-->
-		</fieldset>		
-	</form>
-	
-	
-<%--El pie de la pagina. --%>	
-<%@ include file="includes/pie.jsp" %>
+</body>
+</html>
