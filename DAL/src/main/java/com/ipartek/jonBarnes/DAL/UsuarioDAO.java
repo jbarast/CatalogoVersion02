@@ -35,6 +35,8 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	 */
 	public UsuarioDAO() {
 
+		iniciarConexion();
+
 	}
 
 	/**
@@ -65,8 +67,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	@Override
 	public void insert(Usuario usuario) {
 
-		// abrir conexion.
-		iniciarConexion();
+
 		// Primero cargamos el rol.
 		ROLDAO rolDAO = new ROLDAO();
 		ROL rolUsuario;
@@ -80,16 +81,14 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		manager.getTransaction().commit();
 		// manager.close();
 
-		// Cerramos las conexiones.
-		cerrarConexion();
+
 
 	}
 
 	@Override
 	public void delete(Usuario usuario) {
 
-		// abrimos la conexion.
-		iniciarConexion();
+
 
 		// para probar algunas cosas.
 		System.out.println("El usuario que se va a borrar : " + usuario);
@@ -98,16 +97,14 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		manager.remove(usuario);
 		manager.getTransaction().commit();
 
-		// Cerramos la conexion.
-		cerrarConexion();
+
 
 	}
 
 	@Override
 	public void delete(long idUsuario) {
 
-		// abrimos la conexion.
-		iniciarConexion();
+
 
 		// Primero buscamos el usuario.
 		Usuario usuario = new Usuario();
@@ -116,16 +113,14 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		// Borramos el usuario.
 		this.delete(usuario);
 
-		// Cerramos la conexion.
-		cerrarConexion();
+
 
 	}
 
 	@Override
 	public void update(Usuario usuario) {
 
-		// Abrimos la conexion.
-		iniciarConexion();
+
 
 		// 1º-Buscamos el usuario.
 		Usuario usuarioBD = new Usuario();
@@ -134,21 +129,20 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		usuarioBD.setNombreCompleto(usuario.getNombreCompleto());
 		usuarioBD.setPassword(usuario.getPassword());
 
-		// Cerramos la conexion.
-		cerrarConexion();
+		manager.merge(usuarioBD);
+
+
 
 	}
 
 	@Override
 	public Usuario[] findAll() {
 
-		// abrimos la conexion.
-		iniciarConexion();
+
 
 		ArrayList<Usuario> usuarios = (ArrayList<Usuario>) manager.createQuery("FROM Usuario").getResultList();
 
-		// cerramos la conexion.
-		cerrarConexion();
+
 
 		// Devolvemos todos los usuarios que hay en la base de datos.
 		return usuarios.toArray(new Usuario[usuarios.size()]);
@@ -158,13 +152,11 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	@Override
 	public Usuario findById(long idUsuario) {
 
-		// abrimos la conexion.
-		iniciarConexion();
+
 
 		Usuario usuario = manager.find(Usuario.class, idUsuario);
 
-		// cerramos la conexion.
-		cerrarConexion();
+
 
 		// Return
 		return usuario;
@@ -174,8 +166,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	@Override
 	public Usuario findByUsername(final String username) {
 
-		// abrimos la conexion.
-		iniciarConexion();
+
 
 		// Creamos la variable bien.
 		String usernameCompleto = String.format("\'%s\'", username);
@@ -189,8 +180,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 		// Ejecutamos la query.
 		Usuario usuario = (Usuario) query.getSingleResult();
 
-		// cerramos la conexion.
-		cerrarConexion();
+
 
 		// Return
 		return usuario;
@@ -200,8 +190,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 	@Override
 	public boolean validate(Usuario usuario) {
 
-		// Abrimos la conexion.
-		iniciarConexion();
+
 
 		// La variable que devolvemos.
 		boolean usuarioValido = false;
@@ -218,8 +207,7 @@ public class UsuarioDAO implements UsuarioInterfaceDAO {
 			usuarioValido = true;
 		}
 
-		// Cerramos la conexion.
-		cerrarConexion();
+
 
 		// Return
 		return usuarioValido;
