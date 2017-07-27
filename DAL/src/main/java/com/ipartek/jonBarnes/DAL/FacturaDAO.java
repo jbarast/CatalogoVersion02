@@ -55,7 +55,7 @@ public class FacturaDAO implements FacturaInterfaceDAO {
     public void insert(Factura factura) {
 
         transaction.begin();
-        manager.persist(factura);
+        manager.merge(factura);
         transaction.commit();
 
     }

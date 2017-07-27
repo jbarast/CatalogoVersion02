@@ -3,6 +3,8 @@
 package com.ipartek.jonBarnes.webapp.controladores;
 
 import com.ipartek.jonBarnes.DAL.FacturaDAO;
+import com.ipartek.jonBarnes.DAL.ProductoDAO;
+import com.ipartek.jonBarnes.DAL.UsuarioDAO;
 import com.ipartek.jonBarnes.tipos.Carrito;
 import com.ipartek.jonBarnes.tipos.Factura;
 import com.ipartek.jonBarnes.tipos.Producto;
@@ -71,8 +73,13 @@ public class InsertarFacturaServlet extends HttpServlet {
         //Segundo lo tenemos que pasar a factura.
         Factura facturaSession = new Factura();
 
+        //La metemos en la base de datos.
+        FacturaDAO facturaDAO = new FacturaDAO();
+        ProductoDAO productoDAO = new ProductoDAO();
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+
         //Lo elementos de una factura.
-        facturaSession.setUsuario(usuarioSession);
+        facturaSession.setUsuario(usuarioDAO.findByUsername(usuarioSession.getUsername()));
         facturaSession.setDate(new Date()); //TODO Mirar esto bien.
 
         //Convertimos Carrito a Producto.
@@ -84,7 +91,7 @@ public class InsertarFacturaServlet extends HttpServlet {
         for (int i = 0; i < carritoSize; i++) {
 
             //Enprincipio funciona. Mirarlo bien.
-            listaProductosCarrito.add(carritoSession.get(i).getProducto());
+            listaProductosCarrito.add(productoDAO.findByUsername(carritoSession.get(i).getProducto().getNombre()));
         }
 
         facturaSession.setProductos(carritoSession);
@@ -92,8 +99,11 @@ public class InsertarFacturaServlet extends HttpServlet {
         //Miramos que este bien creado.
         System.out.println("La factura es: " + facturaSession);
 
-        //La metemos en la base de datos.
-        FacturaDAO facturaDAO = new FacturaDAO();
+
+
+
+
+
         facturaDAO.insert(facturaSession);
 
         //borramos todos por si acaso.

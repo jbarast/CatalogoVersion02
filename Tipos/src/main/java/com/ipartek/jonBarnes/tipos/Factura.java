@@ -28,7 +28,7 @@ public class Factura {
     @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
 
-    @ManyToMany(targetEntity = Producto.class)
+    @ManyToMany(targetEntity = Producto.class, cascade = CascadeType.ALL)
     private List<Carrito> productos;
 
     //@Column(name = "cantidad")

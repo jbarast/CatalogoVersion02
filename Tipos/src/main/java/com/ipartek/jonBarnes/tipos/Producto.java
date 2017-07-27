@@ -41,7 +41,7 @@ public class Producto implements Serializable {
 	@Column(name = "Imagen")
 	private String rutaImagen;
 
-	@ManyToMany(targetEntity = Factura.class)
+	@ManyToMany(targetEntity = Factura.class,cascade = CascadeType.ALL)
 	private List<Factura> facturas = new ArrayList<Factura>();
 
 	// Constructores.
