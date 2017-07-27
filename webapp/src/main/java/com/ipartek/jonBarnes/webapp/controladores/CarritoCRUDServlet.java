@@ -69,8 +69,8 @@ public class CarritoCRUDServlet extends HttpServlet {
 		if (op == null) {
 
 			// TODO quitar esto.
-			for (Carrito carritoProducto : carrito)
-				System.out.println("El carrito" + carritoProducto);
+			//for (Carrito carritoProducto : carrito)
+			//	System.out.println("El carrito" + carritoProducto);
 
 			request.setAttribute("carrito", carrito);
 

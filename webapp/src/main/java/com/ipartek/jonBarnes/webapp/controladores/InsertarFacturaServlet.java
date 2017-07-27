@@ -2,6 +2,7 @@
 
 package com.ipartek.jonBarnes.webapp.controladores;
 
+import com.ipartek.jonBarnes.DAL.FacturaDAO;
 import com.ipartek.jonBarnes.tipos.Carrito;
 import com.ipartek.jonBarnes.tipos.Factura;
 import com.ipartek.jonBarnes.tipos.Producto;
@@ -21,13 +22,10 @@ import java.util.List;
 
 
 /**
- *
  * Servlet que lo que hara sera, insertar los datos del carrito en la base de datos.
  *
  * @author jonBarnes
  * @version 27/07/2017
- *
- *
  */
 @WebServlet(name = "insertarfactura")
 public class InsertarFacturaServlet extends HttpServlet {
@@ -43,11 +41,12 @@ public class InsertarFacturaServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        doPost(request, response);
+
     }
 
 
     /**
-     *
      * Metodo doPost. Se encarga de recoger los datos del carrito, meterlos en la base de datos y borrar el carrito.
      *
      * @param request
@@ -62,12 +61,12 @@ public class InsertarFacturaServlet extends HttpServlet {
         // Session.
         HttpSession session = request.getSession();
         Usuario usuarioSession = (Usuario) session.getAttribute("usuario");
-        List<Carrito> carritoSession = (ArrayList<Carrito>)session.getAttribute("carrito");
+        List<Carrito> carritoSession = (ArrayList<Carrito>) session.getAttribute("carrito");
 
 
         //Datos para comprobar que estan bien recogidos los datos.
-        System.out.println("El usuario es: "+usuarioSession);
-        System.out.println("Su carrito es: "+carritoSession);
+        System.out.println("El usuario es: " + usuarioSession);
+        System.out.println("Su carrito es: " + carritoSession);
 
         //Segundo lo tenemos que pasar a factura.
         Factura facturaSession = new Factura();
@@ -82,27 +81,31 @@ public class InsertarFacturaServlet extends HttpServlet {
 
         int carritoSize = carritoSession.size();
 
-        for (int i=0;i<carritoSize;i++){
+        for (int i = 0; i < carritoSize; i++) {
 
+            //Enprincipio funciona. Mirarlo bien.
             listaProductosCarrito.add(carritoSession.get(i).getProducto());
         }
 
         facturaSession.setProductos(carritoSession);
 
         //Miramos que este bien creado.
-        System.out.println("La factura es: "+facturaSession);
+        System.out.println("La factura es: " + facturaSession);
 
+        //La metemos en la base de datos.
+        FacturaDAO facturaDAO = new FacturaDAO();
+        facturaDAO.insert(facturaSession);
 
+        //borramos todos por si acaso.
+        usuarioSession = null;
+        carritoSession = null;
+        facturaSession = null;
 
-
-
-
-
-
+        //Metemos el carrito.
+        request.setAttribute("carrito", carritoSession);
         //El rediccionamiento.
-        request.getRequestDispatcher(ConstantesGlobales.RUTA_LISTADO_FACTURAS).forward(request, response);
-
-
+        request.getRequestDispatcher(ConstantesGlobales.RUTA_INSERTAR_FACTURA).forward(request, response);
+        return;
 
 
     }

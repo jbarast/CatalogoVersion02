@@ -27,6 +27,7 @@ public class FacturaDAO implements FacturaInterfaceDAO {
 
     //Constructor
     public FacturaDAO() {
+        conexion();
 
     }
 
@@ -52,32 +53,33 @@ public class FacturaDAO implements FacturaInterfaceDAO {
 
     @Override
     public void insert(Factura factura) {
-        conexion();
+
         transaction.begin();
         manager.persist(factura);
-        cerrarManagers();
+        transaction.commit();
+
     }
 
     //TODO mirar esto muy bien.
     @Override
     public void delete(Factura factura) {
-        conexion();
+
         transaction.begin();
 
         manager.remove(factura);
         transaction.commit();
 
-        cerrarManagers();
+
 
     }
 
     @Override
     public Factura[] findAll() {
-        conexion();
+
 
         ArrayList<Factura> facturas = (ArrayList<Factura>) manager.createQuery("FROM Factura ").getResultList();
 
-        cerrarManagers();
+
         return facturas.toArray(new Factura[facturas.size()]);
 
     }
@@ -85,8 +87,7 @@ public class FacturaDAO implements FacturaInterfaceDAO {
     @Override
     public Factura[] findFacturasCliente(Usuario cliente) {
 
-        conexion();
-        ;
+
 
         //Cogemos la Factura.
         TypedQuery<Factura> consultaFactura = manager.createQuery("select a from Factura a where a.id = :idUsuario", Factura.class);
@@ -94,7 +95,7 @@ public class FacturaDAO implements FacturaInterfaceDAO {
         //TODO no entindo bien el cambio hecho.
         List<Factura> facturasCliente = new ArrayList<Factura>((Collection<? extends Factura>) consultaFactura.setParameter("idUsuario", cliente.getId()));
 
-        cerrarManagers();
+
 
         return facturasCliente.toArray(new Factura[facturasCliente.size()]);
     }
@@ -102,10 +103,10 @@ public class FacturaDAO implements FacturaInterfaceDAO {
     @Override
     public Factura findByID(Long id) {
 
-        conexion();
+
         Factura factura = manager.find(Factura.class, id);
 
-        cerrarManagers();
+
 
         return factura;
     }

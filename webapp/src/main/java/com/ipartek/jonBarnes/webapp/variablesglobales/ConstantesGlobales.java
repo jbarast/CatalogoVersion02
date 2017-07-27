@@ -52,4 +52,7 @@ public class ConstantesGlobales {
 	public static final String RUTA_LISTADO_FACTURAS = RUTA + "listafacturas.jsp";
 	public static final String RUTA_SERVLET_LISTADO_FACTURAS = "/listafacturas";
 
+	public static final String RUTA_INSERTAR_FACTURA = RUTA + "insertarfactura.jsp";
+	public static final String RUTA_SERVLET_INSERTAR_FACTURA = "insertarfactura";
+
 }
