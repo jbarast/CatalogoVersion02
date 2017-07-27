@@ -16,7 +16,6 @@ import static org.junit.Assert.*;
  *
  * @author jonBarnes
  * @version 21/07/2017
- *
  */
 public class CarritoTest {
 
@@ -28,7 +27,7 @@ public class CarritoTest {
 
         //instanciamos la clase carrito.
         //String nombre, String descripcion, int stock, BigDecimal precio, String rutaImagen, int cantidad
-        carrito = new Carrito("ProductoCarrito","Producto muy pero que muy bueno",10,new BigDecimal(25),"La imagen donde andara",25);
+        carrito = new Carrito("ProductoCarrito", "Producto muy pero que muy bueno", 10, new BigDecimal(25), "La imagen donde andara", 25);
     }
 
     @After
@@ -43,15 +42,37 @@ public class CarritoTest {
     @Test
     public void getCantidad() throws Exception {
 
-        assertEquals("Fallo en el getCantidad()",25,(int)carrito.getCantidad());
+        assertEquals("Fallo en el getCantidad()", 25, (int) carrito.getCantidad());
     }
 
     @Test
     public void setCantidad() throws Exception {
 
-        assertEquals("Fallo en el getCantidad() en el metodo setCantidad()",25,(int)carrito.getCantidad());
+        assertEquals("Fallo en el getCantidad() en el metodo setCantidad()", 25, (int) carrito.getCantidad());
         carrito.setCantidad(125);
-        assertEquals("Fallo en el setCantidad()",125,(int)carrito.getCantidad());
+        assertEquals("Fallo en el setCantidad()", 125, (int) carrito.getCantidad());
+    }
+
+    @Test
+    public void testGetProducto() throws Exception{
+
+        Producto producto02 = new Producto("ProductoCarrito", "Producto muy pero que muy bueno", 10, new BigDecimal(25), "La imagen donde andara");
+
+        assertEquals("Fallo en el getProducto()", producto02, carrito.getProducto());
+
+    }
+
+    @Test
+    public void testSetProducto() throws Exception{
+
+        Producto producto02 = new Producto("ProductoCarrito", "Producto muy pero que muy bueno", 10, new BigDecimal(25), "La imagen donde andara");
+        assertEquals("Fallo en el getProducto() en el setProducto()", producto02, carrito.getProducto());
+
+        Producto producto03 = new Producto("asdfa", "aefaef", 10, new BigDecimal(25), "aiefñoae");
+        carrito.setProducto(producto03);
+        assertEquals("Fallo en el setProducto()",producto03,carrito.getProducto());
+
+
     }
 
     //Test del metodo toString().
@@ -60,16 +81,16 @@ public class CarritoTest {
 
         String carritoToStringEsperado = "Carrito{Producto: " + carrito.getNombre() + "cantidad=" + 25 + '}';
 
-        assertEquals("Fallo en el metodo toString()",carritoToStringEsperado,carrito.toString());
+        assertEquals("Fallo en el metodo toString()", carritoToStringEsperado, carrito.toString());
     }
 
     //Test del metodo equals().
     @Test
     public void testEquals() throws Exception {
 
-        Carrito carrito02 = new Carrito("ProductoCarrito","Producto muy pero que muy bueno",10,new BigDecimal(25),"La imagen donde andara",25);
+        Carrito carrito02 = new Carrito("ProductoCarrito", "Producto muy pero que muy bueno", 10, new BigDecimal(25), "La imagen donde andara", 25);
 
-       assertTrue("Fallo en el metodo equals()",carrito.equals(carrito02));
+        assertTrue("Fallo en el metodo equals()", carrito.equals(carrito02));
 
     }
 

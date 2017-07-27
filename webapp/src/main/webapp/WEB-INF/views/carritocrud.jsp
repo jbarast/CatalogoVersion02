@@ -55,8 +55,10 @@
     </tbody>
 </table>
 
+
+
 <!--Boton para comprar -->
-<a class="btn btn-default" href="factura" role="button">Comprar</a>
+<a class="btn btn-default" href="insertarfactura" role="button">Comprar</a>
 
 <%--pie --%>
 <%@ include file="includes/pie.jsp"%>
