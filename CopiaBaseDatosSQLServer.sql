@@ -1,0 +1,328 @@
+USE [master]
+GO
+/****** Object:  Database [ipartek]    Script Date: 28/07/2017 18:08:05 ******/
+CREATE DATABASE [ipartek]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'ipartek', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\DATA\ipartek.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'ipartek_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\DATA\ipartek_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+GO
+ALTER DATABASE [ipartek] SET COMPATIBILITY_LEVEL = 130
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [ipartek].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [ipartek] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [ipartek] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [ipartek] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [ipartek] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [ipartek] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [ipartek] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [ipartek] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [ipartek] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [ipartek] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [ipartek] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [ipartek] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [ipartek] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [ipartek] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [ipartek] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [ipartek] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [ipartek] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [ipartek] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [ipartek] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [ipartek] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [ipartek] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [ipartek] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [ipartek] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [ipartek] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [ipartek] SET  MULTI_USER 
+GO
+ALTER DATABASE [ipartek] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [ipartek] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [ipartek] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [ipartek] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [ipartek] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [ipartek] SET QUERY_STORE = OFF
+GO
+USE [ipartek]
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = OFF;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET LEGACY_CARDINALITY_ESTIMATION = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 0;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET MAXDOP = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET PARAMETER_SNIFFING = ON;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET PARAMETER_SNIFFING = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET QUERY_OPTIMIZER_HOTFIXES = OFF;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET QUERY_OPTIMIZER_HOTFIXES = PRIMARY;
+GO
+USE [ipartek]
+GO
+/****** Object:  Table [dbo].[clases]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[clases](
+	[cid] [int] NOT NULL,
+	[cname] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[cid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[clases_profesores]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[clases_profesores](
+	[Clase_cid] [int] NOT NULL,
+	[teacherSet_tid] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Clase_cid] ASC,
+	[teacherSet_tid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[facturas]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[facturas](
+	[id] [bigint] NOT NULL,
+	[fecha] [datetime2](7) NULL,
+	[id_usuario] [bigint] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[facturas_productos]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[facturas_productos](
+	[Factura_id] [bigint] NOT NULL,
+	[productos_id] [bigint] NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[hibernate_sequence]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[hibernate_sequence](
+	[next_val] [bigint] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[productos]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[productos](
+	[id] [bigint] NOT NULL,
+	[descripcion] [varchar](255) NULL,
+	[nombre] [varchar](255) NULL,
+	[precio] [numeric](19, 2) NULL,
+	[Imagen] [varchar](255) NULL,
+	[stock] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_mlgw7js72hh2xtd4mvpdqfsbe] UNIQUE NONCLUSTERED 
+(
+	[nombre] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UKmlgw7js72hh2xtd4mvpdqfsbe] UNIQUE NONCLUSTERED 
+(
+	[nombre] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[productos_facturas]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[productos_facturas](
+	[Producto_id] [bigint] NOT NULL,
+	[facturas_id] [bigint] NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[profesores]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[profesores](
+	[tid] [int] NOT NULL,
+	[subject] [varchar](255) NULL,
+	[tname] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[tid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[profesores_clases]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[profesores_clases](
+	[Teacher_tid] [int] NOT NULL,
+	[clasSet_cid] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Teacher_tid] ASC,
+	[clasSet_cid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[roles]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[roles](
+	[id] [bigint] NOT NULL,
+	[descripcion] [varchar](255) NULL,
+	[rol] [varchar](255) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_g00thobnv3twutok8x6furkx1] UNIQUE NONCLUSTERED 
+(
+	[rol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UKg00thobnv3twutok8x6furkx1] UNIQUE NONCLUSTERED 
+(
+	[rol] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[usuarios]    Script Date: 28/07/2017 18:08:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[usuarios](
+	[id] [bigint] NOT NULL,
+	[nombre_completo] [varchar](255) NULL,
+	[password] [varchar](255) NULL,
+	[username] [varchar](255) NULL,
+	[id_rol] [bigint] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_m2dvbwfge291euvmk6vkkocao] UNIQUE NONCLUSTERED 
+(
+	[username] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UKm2dvbwfge291euvmk6vkkocao] UNIQUE NONCLUSTERED 
+(
+	[username] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[clases_profesores]  WITH CHECK ADD  CONSTRAINT [FK8prwdwcbqx7uh8bqjil13uf44] FOREIGN KEY([teacherSet_tid])
+REFERENCES [dbo].[profesores] ([tid])
+GO
+ALTER TABLE [dbo].[clases_profesores] CHECK CONSTRAINT [FK8prwdwcbqx7uh8bqjil13uf44]
+GO
+ALTER TABLE [dbo].[clases_profesores]  WITH CHECK ADD  CONSTRAINT [FKc4inj9fq969qy2byob1sr0xxb] FOREIGN KEY([Clase_cid])
+REFERENCES [dbo].[clases] ([cid])
+GO
+ALTER TABLE [dbo].[clases_profesores] CHECK CONSTRAINT [FKc4inj9fq969qy2byob1sr0xxb]
+GO
+ALTER TABLE [dbo].[facturas]  WITH CHECK ADD  CONSTRAINT [FKqkcj0ifyqh8fjrurt5ndyjq3o] FOREIGN KEY([id_usuario])
+REFERENCES [dbo].[usuarios] ([id])
+GO
+ALTER TABLE [dbo].[facturas] CHECK CONSTRAINT [FKqkcj0ifyqh8fjrurt5ndyjq3o]
+GO
+ALTER TABLE [dbo].[facturas_productos]  WITH CHECK ADD  CONSTRAINT [FKjtsfhhbfubpvj6gry6slrcui9] FOREIGN KEY([Factura_id])
+REFERENCES [dbo].[facturas] ([id])
+GO
+ALTER TABLE [dbo].[facturas_productos] CHECK CONSTRAINT [FKjtsfhhbfubpvj6gry6slrcui9]
+GO
+ALTER TABLE [dbo].[facturas_productos]  WITH CHECK ADD  CONSTRAINT [FKnkcvy58jujefpkqiiccf0xam7] FOREIGN KEY([productos_id])
+REFERENCES [dbo].[productos] ([id])
+GO
+ALTER TABLE [dbo].[facturas_productos] CHECK CONSTRAINT [FKnkcvy58jujefpkqiiccf0xam7]
+GO
+ALTER TABLE [dbo].[productos_facturas]  WITH CHECK ADD  CONSTRAINT [FK5fdlhspm754bmudiko6jfoqds] FOREIGN KEY([facturas_id])
+REFERENCES [dbo].[facturas] ([id])
+GO
+ALTER TABLE [dbo].[productos_facturas] CHECK CONSTRAINT [FK5fdlhspm754bmudiko6jfoqds]
+GO
+ALTER TABLE [dbo].[productos_facturas]  WITH CHECK ADD  CONSTRAINT [FKfak9s7ey8ate5h2t2cjh80yv9] FOREIGN KEY([Producto_id])
+REFERENCES [dbo].[productos] ([id])
+GO
+ALTER TABLE [dbo].[productos_facturas] CHECK CONSTRAINT [FKfak9s7ey8ate5h2t2cjh80yv9]
+GO
+ALTER TABLE [dbo].[profesores_clases]  WITH CHECK ADD  CONSTRAINT [FK3j862u2vd60nbufrlqslurcrs] FOREIGN KEY([Teacher_tid])
+REFERENCES [dbo].[profesores] ([tid])
+GO
+ALTER TABLE [dbo].[profesores_clases] CHECK CONSTRAINT [FK3j862u2vd60nbufrlqslurcrs]
+GO
+ALTER TABLE [dbo].[profesores_clases]  WITH CHECK ADD  CONSTRAINT [FKpd5c78chxafk3gvsbc7l00axe] FOREIGN KEY([clasSet_cid])
+REFERENCES [dbo].[clases] ([cid])
+GO
+ALTER TABLE [dbo].[profesores_clases] CHECK CONSTRAINT [FKpd5c78chxafk3gvsbc7l00axe]
+GO
+ALTER TABLE [dbo].[usuarios]  WITH CHECK ADD  CONSTRAINT [FK3kl77pehgupicftwfreqnjkll] FOREIGN KEY([id_rol])
+REFERENCES [dbo].[roles] ([id])
+GO
+ALTER TABLE [dbo].[usuarios] CHECK CONSTRAINT [FK3kl77pehgupicftwfreqnjkll]
+GO
+USE [master]
+GO
+ALTER DATABASE [ipartek] SET  READ_WRITE 
+GO
