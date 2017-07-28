@@ -5,6 +5,7 @@ package com.ipartek.jonBarnes.DAL;
 
 import com.ipartek.jonBarnes.DAL.interfaces.FacturaInterfaceDAO;
 import com.ipartek.jonBarnes.tipos.Factura;
+import com.ipartek.jonBarnes.tipos.Producto;
 import com.ipartek.jonBarnes.tipos.Usuario;
 
 import javax.persistence.*;
@@ -51,12 +52,42 @@ public class FacturaDAO implements FacturaInterfaceDAO {
     }
 
 
+    /**
+     * Metodo antiguo de inserte, tiene un error.
+     * @param factura
+     */
     @Override
-    public void insert(Factura factura) {
+    public void insertConERROR(Factura factura) {
 
         transaction.begin();
         manager.merge(factura);
         transaction.commit();
+
+    }
+
+    /**
+     *
+     * Metodo para insertar.
+     * Mirarlo bastante bien.
+     *
+     * @param factura pasamos la factura que queremos meter.
+     */
+    @Override
+    public void insert(Factura factura){
+
+        //Metemo los datos que necesitamos.
+
+        transaction.begin();
+
+        Factura facturaToInsert = new Factura();
+
+        for (Producto producto: factura) {
+            facturaToInsert.getProductos().add(producto);
+
+        }
+
+
+
 
     }
 
